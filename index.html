@@ -1,38 +1,210 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="utf-8">
-    <title>P01 - Style Guide</title>
+    <title>Echo Style Guide</title>
 
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/grid.css" rel="stylesheet" />
+    <link href="css/token.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <header>
-      <h1>P01 - Style Guide Template</h1>
-
-      <p>A template for the company's style guides.</p>
-
-      <nav>        
-        <a href="#">Style Guide</a>
-        <a href="product_listing.html">Products Page</a>
-        <a href="checkout.html">Check Out Page</a>
+      <nav class="nav-bar">
+        <a href="style-guide.html">
+          <img src="img/logo.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="nav-flex">
+          <a class="nav-item" href="style-guide.html">Style Guide</a>
+          <a class="nav-item" href="shop-sample.html">Shop Sample</a>
+          <a class="nav-item" href="cart-sample.html">Cart Sample</a>
+        </div>
       </nav>
     </header>
 
-   
-
-    <section id="citations" class="element">
-      <h2>Citations</h2>
-
-      <ul>
-
-      <li> Sources </li>
-
+    <section class="shop-banner">
+      <h1 class="shop-title">All Products</h1>
     </section>
 
+    <section class="element-main">
+      <div class="grid element-grid">
+        <div class="product-listing product-flex">
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/mtvunplugged.jpg"
+                  alt="Ariana Grande Rem Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">MTV Unplugged Vinyl Record</h4>
+            <h5 class="artist-name">Bastille</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/familia.jpg"
+                  alt="Bastille MTV Unplugged Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Familia Vinyl Record</h4>
+            <h5 class="artist-name">Camila Cabelo</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/position.jpg"
+                  alt="Camila Cabelo Familia Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Positions Vinyl Record</h4>
+            <h5 class="artist-name">Ariana Grande</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/1989.jpg"
+                  alt="Ariana Grande Positions Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">1989 Vinyl Record</h4>
+            <h5 class="artist-name">Taylor Swift</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/planether1.jpg"
+                  alt="Doja Cat Planet Her Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Planet Her Vinyl Record</h4>
+            <h5 class="artist-name">Doja Cat</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/thankunext.jpg"
+                  alt="Ariana Grande Thank U Next Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Thank U Next Vinyl Record</h4>
+            <h5 class="artist-name">Ariana Grande</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/rem.jpg"
+                  alt="Ariana Grande Rem Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">REM Vinyl Record</h4>
+            <h5 class="artist-name">Ariana Grande</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/charlieputh.jpg"
+                  alt="Charlie Puth Charlie Puth Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Charlie Puth Vinyl Record</h4>
+            <h5 class="artist-name">Charlie Puth</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+          <div class="product-container">
+            <div class="image-container">
+              <a href="#">
+                <img
+                  class="img img-product"
+                  src="img/sweetener.jpg"
+                  alt="Ariana Grande Sweetener Vinyl Record"
+                />
+              </a>
+            </div>
+            <h4 class="product-name">Sweetener Vinyl Record</h4>
+            <h5 class="artist-name">Ariana Grande</h5>
+            <p class="product-price">$59.99</p>
+            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="footer-container">
+      <div class="footer-box">
+        <img src="img/logo.svg" alt="Logo" class="footer-logo" />
+
+        <div class="footer-nav-container">
+          <div class="footer-nav">
+            <h5 class="footer-title">PAGES</h5>
+            <a class="footer-link" href="style-guide.html">Style Guide</a>
+            <a class="footer-link" href="shop-sample.html">Shop Sample</a>
+            <a class="footer-link" href="cart-sample.html">Cart Sample</a>
+          </div>
+
+          <div class="footer-nav">
+            <h5 class="footer-title">GUIDELINES</h5>
+            <a class="footer-link" href="#branding_idea">Branding Idea</a>
+            <a class="footer-link" href="#interactive_elements"
+              >Interactive Elements</a
+            >
+            <a class="footer-link" href="#text_elements">Text Elements</a>
+            <a class="footer-link" href="#combined_elements"
+              >Combined Elements</a
+            >
+            <a class="footer-link" href="#design_guidelines"
+              >Design Guidelines</a
+            >
+            <a class="footer-link" href="#citation">Citation</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
