@@ -1,0 +1,28 @@
+html{
+
+}
+
+body{
+  font-family: 'Assistant', sans-serif;
+}
+
+section {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.element {
+  padding-bottom: 0.25rem;
+  border-top-width: 0.075rem;
+  border-top-style: solid;
+  border-top-color: var(--border);
+}
+
+.element-main {
+  padding: 0rem 6rem;
+}
+
+.element-grid {
+  margin: 0rem;
+}
+
