@@ -54,8 +54,162 @@
           <p>Nebula differentiate itself by offering unique and trend-setting makeup products that stand out in the market. Whether it's innovative formulations, captivating packaging, or limited-edition collections inspired by celestial themes, Nebula piques customers' curiosity and desire to try something new. On top of that, Nebula is inclusive and ensures </p>
         </div>
       </section>
+    </section>
+
+    <section id="interactive_elements" class="element-main">
+      <h2>Interactive Elements</h2>
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Navigation Link</h3>
+
+          <h4>CSS selector</h4>
+          <p>.btn, .btn-primary</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;a class="btn btn-primary" href="#"&gt;Navigation Button&lt;/a&gt;</code>
+
+          <h4>Rendered element</h4>
+          <a class="btn btn-primary" href="#">Primary Button</a>
+        </div>
+      </section>
+
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>In-Text Link</h3>
+
+          <h4>CSS selector</h4>
+          <p>.in-text-link</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;p&gt;This is a &lt;a class="in-text-link" href="https://figmashort.link/e53sp5">link.&lt;/a&gt;&lt;/p&gt;</code>
+
+          <h4>Rendered element</h4>
+          <p>This is a <a class="in-text-link" href="https://figmashort.link/e53sp5">link.</a></p>
+        </div>
+      </section>
+
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Submit/Reset Buttons</h3>
+
+          <h4>CSS selector</h4>
+          <p>.btn, .btn-primary, .btn-default, .btn-container</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;div class="btn-container"&gt;
+            &lt;input class="btn btn-primary" type="submit"&gt;
+            &lt;input class="btn btn-default" type="reset"&gt;
+          &lt;/div&gt;</code>
+
+          <h4>Rendered element</h4>
+          <div class="btn-container">
+            <input class="btn btn-primary" type="submit">
+            <input class="btn btn-default" type="reset">
+          </div>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Text Input Field</h3>
+
+          <h4>CSS selector</h4>
+          <p>label, input</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;form&gt; &lt;label for="question"&gt;What are you looking for?&lt;/label&gt;
+          &lt;input type="text" id="questions" placeholder="Type here..."&gt; &lt;/form&gt;</code>
+
+          <h4>Rendered element</h4>
+          <form>
+            <label for="question">What are you looking for?</label>
+            <input type="text" id="question" placeholder="Type here...">
+          </form>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Radio Button</h3>
+
+          <h4>CSS selector</h4>
+          <p>..radio-container, .radio-group, .radio-label, .radio-input-group</p>
+
+          <h4>Sample code</h4>
+          <code>
+            &lt;form method="post" action="#"&gt;
+              &lt;div class="radio-container"&gt;
+                &lt;label for="title"&gt;Payment method:&lt;/label&gt;
+                &lt;div class="radio-group"&gt;
+                  &lt;input type="radio" id="creditcard" name="paymentmethod" value="creditcard"&gt;
+                  &lt;label class="radio-label" for="creditcard"&gt;Credit Card&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="radio-group"&gt;
+                  &lt;input type="radio" id="debit" name="paymentmethod" value="debit"&gt;
+                  &lt;label class="radio-label" for="debit"&gt;Debit Card&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="radio-group"&gt;
+                  &lt;input type="radio" id="internet" name="paymentmethod" value="internet"&gt;
+                  &lt;label class="radio-label" for="internet"&gt;Internet Banking&lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="radio-input-group"&gt;
+                  &lt;div class="radio-group"&gt;
+                    &lt;input type="radio" id="other" name="paymentmethod" value="other"&gt;
+                    &lt;label class="radio-label" for="other"&gt;Other:&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;input type="text" id="otherText" name="otherText" class="other-input" placeholder="Specify method..."&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+          </code>
+
+          <h4>Rendered element</h4>
+          <form method="post" action="#">
+            <div class="radio-container">
+              <label for = "creditradio">Payment method:</label>
+              <div class="radio-group">
+                <input type="radio" id="creditradio" name="paymentmethod" value="creditradio">
+                <label class="radio-label" for="creditradio">Credit Card</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="debitradio" name="paymentmethod" value="debitradio">
+                <label class="radio-label" for="debitradio">Debit Card</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" id="internetradio" name="paymentmethod" value="internetradio">
+                <label class="radio-label" for="internetradio">Internet Banking</label>
+              </div>
+              <div class="radio-input-group">
+                <div class="radio-group">
+                  <input type="radio" id="otherradio" name="paymentmethod" value="otherradio">
+                  <label class="radio-label" for="otherradio">Other:</label>
+                </div>
+                <input type="text" id="otherTextRadio" name="otherText" class="other-input" placeholder="Specify method...">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Image as a Link</h3>
+
+          <h4>CSS selector</h4>
+          <p>.img, .img-product</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;a href="https://figmashort.link/e53sp5"&gt; &lt;img class="img img-product" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"&gt; &lt;/a&gt;</code>
+
+          <h4>Rendered element</h4>
+          <a href="https://figmashort.link/e53sp5"> <img class="img img-product" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"> </a>
+        </div>
+      </section>
 
     </section>
+
 
 
     <section class="shop-banner">
