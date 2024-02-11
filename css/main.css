@@ -4,12 +4,17 @@ html{
 
 body{
   font-family: 'Assistant', sans-serif;
+  color: var(--neutral-700);
 }
 
 section {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+
+/* 
+  BRANDING GUIDELINES -------------------
+*/
 
 .element {
   padding-bottom: 0.25rem;
@@ -24,5 +29,202 @@ section {
 
 .element-grid {
   margin: 0rem;
+}
+
+code {
+  background-color: var(--blue-600);
+  padding: 0.5rem;
+  display: block;
+  border-radius: 0.5rem;
+  color: var(--neutral-900);
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+
+/* Styling for the buttons */
+
+.btn {
+  width:fit-content;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: var(--neutral-900);
+  background-color: var(--interactive);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--interactive-hover);
+  border: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: var(--neutral-00);
+  background-color: var(--neutral-900);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  border: none;
+}
+
+.btn-secondary:hover, .btn-primary:focus {
+  background-color: var(--neutral-700);
+  border: none;
+}
+
+
+.btn-default {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: var(--neutral-900);
+  background-color: var(--neutral-00);
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+  font-family: "CircularXXTrial", sans-serif;
+  border-color: var(--neutral-300);
+}
+
+.btn-default:hover, .btn-default:focus {
+  background-color: var(--neutral-300);
+  border-color: var(--neutral-300);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+/* Styling for the in-text links */
+
+.in-text-link {
+  color: var(--blue-700);
+  transition: color 0.25s ease-out;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+}
+
+.in-text-link:hover, .in-text-link:focus {
+  color: var(--interactive);
+}
+
+/* Styling for form elements */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  max-width: 90%;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.25rem;
+  border: 0.1rem solid var(--blue-900);
+  border-radius: 0.35rem;
+  border-color: var(--blue-600);
+  transition: border-color 0.5s;
+  margin-bottom: 0.5rem;
+  max-width:20rem;
+  width:100%;
+  display: block;
+}
+
+input:hover {
+  border-color: var(--pink-600); /* Change the border color on focus */
+}
+
+input:focus {
+  border-color: var(--pink-600); /* Change the border color on focus */
+  border-width: 0.25rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border: 0.1rem solid var(--pink-600);;
+  background-color: var(--neutral-600);
+  outline: 0.05rem solid var(--interactive);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.radio-input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0.35rem 0rem;
+  width: 1em;
+  height: 1em;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin: 0rem;
+  width: 1em;
+  height: 1em;
+}
+
+.radio-input-group > input {
+  height: 1rem;
+}
+
+.radio-label {
+  margin: 0rem;
+}
+
+input[type="radio"]:hover {
+  border-color: var(--purple-600);
+  border-width: 0.15rem;
+}
+
+.checkbox-group {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-left: 0rem;
 }
 
