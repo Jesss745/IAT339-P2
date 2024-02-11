@@ -1,0 +1,21 @@
+:root {
+    /* BRAND COLORS */
+    --bg: #EAEEEF;
+    --bg-900:#9EB2B7;
+ 
+    --interactive: #FD6540;
+    --interactive-hover: #F9AD9A;
+  
+    /*Primary */
+    --blue-600: #AFD1DE;
+    --blue-700: #95C4D6;
+    --blue-900: #7BB4CA;
+
+    /*Secondary */
+    --pink-600:#D0B4D2;
+
+    --neutral-00: #FFFFFF;
+    --neutral-300: #C6C6C6;
+    --neutral-700: #404040;
+    --neutral-900: #202020;
+  }
