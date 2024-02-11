@@ -228,3 +228,51 @@ input[type="radio"]:hover {
   margin-left: 0rem;
 }
 
+select {
+  padding: 0.25rem;
+  border: 0.1rem solid var(--blue-900);
+  border-radius: 0.35rem;
+  border-color: var(--blue-600);
+  transition: border-color 0.5s;
+  margin-bottom: 0.5rem;
+  max-width:20rem;
+  width:100%;
+  display: block;
+  box-sizing:content-box;
+}
+
+select:hover {
+  border-color: var(--pink-600); /* Change the border color on focus */
+}
+
+select:focus {
+  border-color: var(--pink-600); /* Change the border color on focus */
+}
+
+select:invalid,select option[value=""] {
+  color: var(--neutral-300);
+}
+
+[hidden] {
+  display: none;
+}
+
+/** Combined Elements **/
+.payment-form-section {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.payment-form-section {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.payment-form-heading {
+  color: var(--bg-900);
+/*  font-family: GT Serif  ;*/
+}
+
+.payment-method-container {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
