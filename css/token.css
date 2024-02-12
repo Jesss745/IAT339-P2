@@ -20,3 +20,47 @@
     --neutral-700: #404040;
     --neutral-900: #202020;
   }
+
+  .color-bg {
+    background-color: var(--bg);
+  }
+
+  .color-bg-900 {
+    background-color: var(--bg-900);
+  }
+
+  .color-bg-1000 {
+    background-color: var(--bg-1000);
+  }
+
+  .color-blue-600 {
+    background-color: var(--blue-600);
+  }
+
+  .color-blue-700 {
+    background-color: var(--blue-700);
+  }
+
+  .color-blue-900 {
+    background-color: var(--blue-900);
+  }
+
+  .color-pink-600 {
+    background-color: var(--pink-600);
+  }
+  
+  .color-neutral-900 {
+    background-color: var(--neutral-900);
+  }
+
+  .color-neutral-700 {
+    background-color: var(--neutral-700);
+  }
+
+  .color-neutral-300 {
+    background-color: var(--neutral-300);
+  }
+
+  .color-neutral-00 {
+    background-color: var(--neutral-00);
+  }

@@ -259,11 +259,13 @@
           &lt;h6 class="text-styling"&gt;Heading 6&lt;/h6&gt;</code>
 
           <h4>Rendered element</h4>
-          <h2 class="text-styling">Heading 2</h2>
-          <h3 class="text-styling">Heading 3</h3>
-          <h4 class="text-styling">Heading 4</h4>
-          <h5 class="text-styling">Heading 5</h5>
-          <h6 class="text-styling">Heading 6</h6>
+          <div class="header-styling">
+            <h2 class="text-styling">Heading 2</h2>
+            <h3 class="text-styling">Heading 3</h3>
+            <h4 class="text-styling">Heading 4</h4>
+            <h5 class="text-styling">Heading 5</h5>
+            <h6 class="text-styling">Heading 6</h6>
+          </div>
         </div>
       </section>
 
@@ -613,31 +615,273 @@
 
                 <div class="btn-container">
                   <input class="btn btn-primary" type="submit">
-                  <input class="btn btn-default" type="reset">
+                  <input class="btn btn-secondary" type="reset">
                 </div>
               </section>
 
             </form>
           </div>
         </section>
+
+        <section class="element">
+          <div class="grid element-grid">
+            <h3>Checkout Cart</h3>
+
+            <h4>CSS selector</h4>
+            <p>.small-container, .cart, .th-product, .th-subtotal, .cart-info, .img-small, .mini-product-name, .mini-product-artist, .total-price, .button-nav, .product-button</p>
+
+            <h4>Sample code</h4>
+            <code>
+              &lt;div class="checkout-header"&gt;
+              &lt;table&gt;
+                &lt;tr&gt; &lt;th class="th-product"&gt;Product&lt;/th&gt; &lt;/tr&gt;
+              &lt;/table&gt;
+              &lt;table&gt;
+                &lt;tr&gt; &lt;th&gt;Quantity&lt;/th&gt; &lt;/tr&gt;
+              &lt;/table&gt;
+              &lt;table&gt;
+                &lt;tr&gt; &lt;th class="th-subtotal"&gt;Subtotal&lt;/th&gt; &lt;/tr&gt;
+              &lt;/table&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="checkout-cart cart"&gt;
+              &lt;div class="cart-info cart-info-grid"&gt;
+                &lt;img class="img" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"&gt;
+                &lt;div class="cart-product-name"&gt;
+                  &lt;p class="mini-product-name"&gt;REM Vinyl Record&lt;/p&gt;
+                  &lt;p class="mini-product-artist"&gt;Ariana Grande&lt;/p&gt;
+                  &lt;small&gt;$59.99&lt;/small&gt;
+                  &lt;div class="remove-link"&gt;
+                    &lt;a href="#" class="in-text-link"&gt;&lt;small&gt;Remove&lt;/small&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;input class="quantity-box" type="number" value="1"&gt;
+              &lt;p class="total-price"&gt;$59.99&lt;/p&gt;
+            
+              &lt;div class="cart-info cart-info-grid"&gt;
+                &lt;img class="img" src="img/position.jpg" alt="Ariana Grande Positions Vinyl Record"&gt;
+                &lt;div class="cart-product-name"&gt;
+                  &lt;p class="mini-product-name"&gt;Positions Vinyl Record&lt;/p&gt;
+                  &lt;p class="mini-product-artist"&gt;Ariana Grande&lt;/p&gt;
+                  &lt;small&gt;$59.99&lt;/small&gt;
+                  &lt;div class="remove-link"&gt;
+                    &lt;a href="#" class="in-text-link"&gt;&lt;small&gt;Remove&lt;/small&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;input class="quantity-box" type="number" value="1"&gt;
+              &lt;p class="total-price"&gt;$59.99&lt;/p&gt;
+            
+              &lt;div class="cart-info cart-info-grid"&gt;
+                &lt;img class="img" src="img/planether1.jpg" alt="Doja Cat Planet Her Vinyl Record"&gt;
+                &lt;div class="cart-product-name"&gt;
+                  &lt;p class="mini-product-name"&gt;Planet Her Vinyl Record&lt;/p&gt;
+                  &lt;p class="mini-product-artist"&gt;Doja Cat&lt;/p&gt;
+                  &lt;small&gt;$59.99&lt;/small&gt;
+                  &lt;div class="remove-link"&gt;
+                    &lt;a href="#" class="in-text-link"&gt;&lt;small&gt;Remove&lt;/small&gt;&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;input class="quantity-box" type="number" value="1"&gt;
+              &lt;p class="total-price"&gt;$59.99&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="checkout-total total-container"&gt;
+              &lt;p class="total-price"&gt;Subtotal&lt;/p&gt;
+              &lt;p class="total-price"&gt;$179.97&lt;/p&gt;
+              &lt;p class="total-price"&gt;Tax&lt;/p&gt;
+              &lt;p class="total-price"&gt;$32.59&lt;/p&gt;
+              &lt;p class="total-price final-price"&gt;Total&lt;/p&gt;
+              &lt;p class="total-price final-price"&gt;$201.56&lt;/p&gt;
+            &lt;/div&gt;
+            
+            &lt;a class="btn-primary checkout-button" href="#"&gt;Proceed to Check Out&lt;/a&gt;
+          </code>
+
+          <h4>Rendered element</h4>
+          <div class="checkout-header">
+            <table>
+              <tr> <th class="th-product">Product</th> </tr>
+            </table>
+            <table>
+              <tr> <th>Quantity</th> </tr>
+            </table>
+            <table>
+              <tr> <th class="th-subtotal">Subtotal</th> </tr>
+            </table>
+          </div>
+
+          <div class="checkout-cart cart">
+            <div class = "cart-info cart-info-grid">
+              <img class="img" src="img/essential-drip-lip-oil.png" alt="Essential Drip Lip Oil in the Shade Lavender Kiss">
+              <div class="cart-product-name">
+                <p class="mini-product-name">Essential Drip Lip Oil</p>
+                <p class="mini-product-shade">Shade: Lavender Kiss</p>
+                <small>$59.99</small>
+                <div class="remove-link">
+                  <a href="#" class="in-text-link"><small>Remove</small></a>
+                </div>
+              </div>
+            </div>
+            <input class="quantity-box" type="number" value="1">
+            <p class="total-price">$59.99</p>
+
+            <div class = "cart-info cart-info-grid">
+              <img class="img" src="img/highlight-topper.png" alt="Highlighter Topper in the Shade Miss Neptune">
+              <div class="cart-product-name">
+                <p class="mini-product-name">Highlighter Topper</p>
+                <p class="mini-product-shade">Shade: Miss Neptune</p>
+                <small>$59.99</small>
+                <div class="remove-link">
+                  <a href="#" class="in-text-link"><small>Remove</small></a>
+                </div>
+              </div>
+            </div>
+            <input class="quantity-box" type="number" value="1">
+            <p class="total-price">$59.99</p>
+
+            <div class = "cart-info cart-info-grid">
+              <img class="img" src="img/lustrous-liquid-eyeshadow.png" alt="Lustrous Liquid Eyeshadow in the Shade Lab Coat">
+              <div class="cart-product-name">
+                <p class="mini-product-name">Lustrous Liquid Eyeshadow</p>
+                <p class="mini-product-shade">Shade: Lab Coat</p>
+                <small>$59.99</small>
+                <div class="remove-link">
+                  <a href="#" class="in-text-link"><small>Remove</small></a>
+                </div>
+              </div>
+            </div>
+            <input class="quantity-box" type="number" value="1">
+            <p class="total-price">$59.99</p>
+          </div>
+
+          <div class="checkout-total total-container">
+            <p class="total-price">Subtotal</p>
+            <p class="total-price">$179.97</p>
+            <p class="total-price">Tax</p>
+            <p class="total-price">$32.59</p>
+            <p class="total-price final-price">Total</p>
+            <p class="total-price final-price">$201.56</p>
+          </div>
+
+          <a class="btn-primary checkout-button" href="#">Proceed to Check Out</a>
+
+        </div>
+      </section>
   
     </section>
 
+       <!-- DESIGN GUIDELINES SECTION // -->
+       <section id="design_guidelines" class="element-main">
+        <h2>Design Guidelines</h2>
+  
+        <section class ="element">
+          <div class="grid element-grid">
+            <h3>Font Pairing</h3>
+            <div class="grid element-grid">
+              <h4> <span class="font-gt-super-ds">GT Super Ds</span> is our brand typeface.</h4>
+              <p>GT Super Ds is the primary brand typeface for NEBULA — a serif font family that The design was inspired by display types popular during the 1970s such as Trooper Roman, Times Modern and Perpetua Super (which it was named after).</p>
+              <h4> <span class="font-suisse">Suisse Int'l</span> is our supporting font.</h4>
+              <p>Suisse Int'l is our body paragraph typeface. Its low-contrast neo-grotesque sans-serif design offers a clean, modern appearance that works well in our brand’s designs that prioritizes legibility.</p>
+            </div>
+          </div>
+        </section>
+  
+        <section class ="element">
+          <div class="grid element-grid">
+            <h3>Colour Palette</h3>
 
+              <h4>Background</h4>
+              <div class="color-container">
+                <div class="color-box color-bg reversed"><span>#EAEEEF</span></div>
+                <div class="color-box color-bg-900"><span>#9EB2B7</span></div>
+                <div class="color-box color-bg-1000"><span>#7D989F</span></div>
+              </div>
+  
+              <h4>Primary</h4>
+              <div class="color-container">
+                <div class="color-box color-blue-600"><span>#AFD1DE</span></div>
+                <div class="color-box color-blue-700"><span>#95C4D6</span></div>
+                <div class="color-box color-blue-900"><span>#7BB4CA</span></div>
+              </div>
+  
+              <h4>Secondary</h4>
+              <div class="color-container">
+                <div class="color-box color-pink-600"><span>#D0B4D2</span></div>
+              </div>
+              
+              <h4>Neutrals</h4>
+              <div class="color-container">
+                <div class="color-box color-neutral-900"><span>#202020</span></div>
+                <div class="color-box color-neutral-700"><span>#404040</span></div>
+                <div class="color-box color-neutral-300 reversed"><span>#D8D8D8</span></div>
+                <div class="color-box color-neutral-00 reversed"><span>#FFFFFF</span></div>
+              </div>
+              
+          </div>
+        </section>
+        
+        <section class ="element">
+          <div class="grid element-grid">
+            <h3>Imagery</h3>
+  
+            <div class="imagery-listing">
+                <img class="img" src="img/essential-drip-lip-oil.png" alt="Essential Drip Lip Oil">
+                <img class="img" src="img/highlight-topper.png" alt="Highlighter Topper">
+                <img class="img" src="img/lustrous-liquid-eyeshadow.png" alt="Lustrous Liquid Eyeshadow">
+                <img class="img" src="img/blush-and-lipstick.png" alt="Blush & Lipstick">
+                <img class="img" src="img/matte-lipstick.png" alt="Matte Lipstick">
+                <img class="img" src="img/satin-matte-blush.png" alt="Satin Matte Blush">
+            </div>
+          </div>
+        </section>
+  
+      </section>
+  
+      <!-- // CITATION SECTION -->
+      <section id="citation" class="element-main">
+        <div class="grid element-grid">
+          <h2>Citation</h2>
+  
+          <section class ="element">
+            <h3>Media References</h3>
+  
+            <div>
+              <ul>
+                <li>GT Super Ds [Font]. Retrieved from <a class="in-text-link" href="https://www.grillitype.com/typeface/gt-super">https://www.grillitype.com/typeface/gt-super.</a><br></li>
+                <li>Suisse Int'l [Font]. Retrieved from <a class="in-text-link" href="https://www.swisstypefaces.com/fonts/suisse/">https://www.swisstypefaces.com/fonts/suisse/</a><br></li>
+                <li>Essential Drip Lip Oil [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a><br></li>
+                <li>Highlighter Topper [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a><br></li>
+                <li>Lustrous Liquid Eyeshadow [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a><br></li>
+                <li>Blush & Lipstick [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a></li>
+                <li>Matte Lipstick [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a><br></li>
+                <li>Satin Matte Blush [Image]. 2024. Rem Beauty. Retrieved from <a class="in-text-link" href="https://rembeauty.com/">https://rembeauty.com/</a><br></li>
+            </div>
+  
+          </section>
+        </div>
+      </section>
+
+    <!-- // FOOTER SECTION -->
     <footer class="footer-container">
       <div class="footer-box">
-        <img src="img/logo.svg" alt="Logo" class="footer-logo" />
+        <img src="svg/NEBULA.svg" alt="Logo" class="footer-logo" />
 
         <div class="footer-nav-container">
           <div class="footer-nav">
-            <h5 class="footer-title">PAGES</h5>
-            <a class="footer-link" href="style-guide.html">Style Guide</a>
-            <a class="footer-link" href="shop-sample.html">Shop Sample</a>
-            <a class="footer-link" href="cart-sample.html">Cart Sample</a>
+            <h5 class="footer-title">Discover</h5>
+            <a class="footer-link" href="shop_page.html">Shop</a>
+            <a class="footer-link" href="about_page.html">About</a>
+            <a class="footer-link" href="events_page.html">Events</a>
+            <a class="footer-link" href="style_guide_page.html">Style Guide</a>
+            <a class="footer-link" href="contact_page.html">Contact</a>
+            <a class="footer-link" href="cart_page.html">Cart</a>
           </div>
 
           <div class="footer-nav">
-            <h5 class="footer-title">GUIDELINES</h5>
+            <h5 class="footer-title">Guidelines</h5>
             <a class="footer-link" href="#branding_idea">Branding Idea</a>
             <a class="footer-link" href="#interactive_elements"
               >Interactive Elements</a
