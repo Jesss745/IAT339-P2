@@ -266,6 +266,16 @@ select:invalid,select option[value=""] {
   align-items: center;
 }
 
+.image-container-colors {
+  margin-top:.5rem;
+  margin-bottom:.5rem;
+} 
+
+.image-container-colors img {
+  width: 40%;
+  height: 100%;
+} 
+
 .img {
   max-width: 100%;
   border-radius: 0.5rem;
