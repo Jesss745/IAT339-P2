@@ -285,7 +285,7 @@ label {
 
 input {
   padding: 0.25rem;
-  border: 1px solid var(--bg);
+  border: 1px solid var(--blue-900);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;
   max-width:20rem;
@@ -302,11 +302,9 @@ input:focus {
   border-width: 0.25rem;
 }
 
-input:focus-visible,
-textarea:focus-visible {
-  border: 0.1rem solid var(--pink-600);;
-  background-color: var(--neutral-600);
-  outline: 0.05rem solid var(--interactive);
+input:focus-visible,textarea:focus-visible {
+  border: 0.1rem solid var(--pink-600);
+  outline: 0.05rem solid var(--pink-600);
 }
 
 .input-container {
@@ -364,7 +362,7 @@ textarea:focus-visible {
 }
 
 input[type="radio"]:hover {
-  border-color: var(--purple-600);
+  border-color: var(--pink-600);
   border-width: 0.15rem;
 }
 
@@ -379,7 +377,7 @@ input[type="radio"]:hover {
 
 select {
   padding: 0.25rem;
-  border: 1px solid var(--bg);
+  border: 1px solid var(--blue-900);
   border-radius: 0rem;
   color: var(--neutral-700);
   transition: border-color 0.5s;
@@ -395,12 +393,14 @@ select:hover {
 }
 
 select:focus {
-  border-color: var(--pink-600); /* Change the border color on focus */
+  border-color: var(--pink-600);
+  border-width: 0.15rem;
 }
 
 select:invalid,select option[value=""] {
-  color: var(--neutral-300);
+  color: var(--neutral-500);
 }
+
 
 [hidden] {
   display: none;
@@ -420,13 +420,8 @@ select:invalid,select option[value=""] {
 } 
 
 .image-container-colors img {
-  width: 40%;
-  height: 100%;
+  display: inline-block;
 } 
-
-.img-container-colors img:hover {
-
-}
 
 .img {
   max-width: 100%;
@@ -437,11 +432,13 @@ select:invalid,select option[value=""] {
 
 .img-product {
   transition: transform 0.2s;
+  height: auto;
+  width:10%;
+  margin-right:.2rem;
 }
 
 .img-product:hover {
-  transform: scale(1.02);
-  filter: brightness(85%);
+  transform: scale(1.05);
 }
 
 /* 
@@ -467,7 +464,6 @@ select:invalid,select option[value=""] {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 6rem;
 }
 
 .product-listing{
@@ -481,15 +477,16 @@ select:invalid,select option[value=""] {
 }
 
 .product-name {
-  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
   color: var(--neutral-900)
 }
 
 .product-color {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-top: 0rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0rem;
 }
 
 .product-price {
@@ -664,7 +661,7 @@ small {
 
 .img-cart {
   max-width: 12rem;
-  max-height: auto;
+  height: auto;
   display: block;
   object-fit: cover;
 }
