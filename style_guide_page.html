@@ -20,16 +20,40 @@
   <body>
     <header>
       <nav class="nav-bar">
+        <div class="nav-flex">
+          <a class="nav-item" href="shop_page.html">Shop</a>
+          <a class="nav-item" href="about_page.html">About</a>
+          <a class="nav-item" href="events_page.html">Events</a>
+        </div>
         <a href="style_guide_page.html">
-          <img src="img/logo.svg" alt="Logo" class="logo" />
+          <img src="svg/NEBULA.svg" alt="Logo" class="logo" />
         </a>
         <div class="nav-flex">
           <a class="nav-item" href="style_guide_page.html">Style Guide</a>
-          <a class="nav-item" href="shop_sample_page.html">Shop Sample</a>
-          <a class="nav-item" href="cart_sample_page.html">Cart Sample</a>
+          <a class="nav-item" href="contact_page.html">Contact</a>
+          <a class="nav-item" href="cart_page.html">Cart</a>
         </div>
       </nav>
     </header>
+
+    <section class="title-banner">
+      <h1>The Style Guide</h1>
+      <p>This style library will be used as a guide to build the Nebula website.</p>
+    </section>
+
+    <section  id="#table_of_contents" class="toc-element">
+      <div class="toc-container">
+        <h3>Table of Contents</h3>
+        <div class="nav-secondary">
+          <a class="in-text-link" href="#branding_idea">Branding Idea</a>
+          <a class="in-text-link" href="#interactive_elements">Interactive Elements</a>
+          <a class="in-text-link" href="#text_elements">Text Elements</a>
+          <a class="in-text-link" href="#combined_elements">Combined Elements</a>
+          <a class="in-text-link" href="#design_guidelines">Design Guidelines</a>
+          <a class="in-text-link" href="#citation">Citation</a>
+        </div>
+      </div>
+    </section>
 
     <!--Branding Ideas Section -->
     <section id="branding_idea" class="element-main">
@@ -215,10 +239,139 @@
       </section>
     </section>
 
-    <!-- Rendered Element Section --> 
+    <!--Text Elements Section -->
+    <section id="text_elements" class="element-main">
+      
+      <h2>Text Elements</h2>
 
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Headings</h3>
+
+          <h4>CSS selector</h4>
+          <p>.text-styling</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;h2 class="text-styling"&gt;Heading 2&lt;/h2&gt;
+          &lt;h3 class="text-styling"&gt;Heading 3&lt;/h3&gt;
+          &lt;h4 class="text-styling"&gt;Heading 4&lt;/h4&gt;
+          &lt;h5 class="text-styling"&gt;Heading 5&lt;/h5&gt;
+          &lt;h6 class="text-styling"&gt;Heading 6&lt;/h6&gt;</code>
+
+          <h4>Rendered element</h4>
+          <h2 class="text-styling">Heading 2</h2>
+          <h3 class="text-styling">Heading 3</h3>
+          <h4 class="text-styling">Heading 4</h4>
+          <h5 class="text-styling">Heading 5</h5>
+          <h6 class="text-styling">Heading 6</h6>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Paragraphs</h3>
+
+          <h4>CSS selector</h4>
+          <p>p</p>
+
+          <h4>Sample code</h4>
+          <code>&lt;p&gt;At NEBULA, we believe that beauty is more than skin deep. It's about confidence, self-love, and embracing what makes you truly unique. Join us on our journey to redefine beauty standards and empower beauty lovers everywhere to shine bright, inside and out.&lt;/p&gt;</code>
+
+          <h4>Rendered element</h4>
+          <p>At NEBULA, we believe that beauty is more than skin deep. It's about confidence, self-love, and embracing what makes you truly unique. Join us on our journey to redefine beauty standards and empower beauty lovers everywhere to shine bright, inside and out.</p>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Bulleted Lists</h3>
+
+          <h4>CSS selector</h4>
+          <p>ul</p>
+
+          <h4>Sample code</h4>
+          <code>
+            &lt;ul&gt;
+              &lt;li&gt;Item List 1&lt;/li&gt;
+              &lt;li&gt;Item List 2&lt;/li&gt;
+              &lt;li&gt;Item List 3&lt;/li&gt;
+            &lt;/ul&gt;
+          </code>
+
+          <h4>Rendered element</h4>
+          <ul>
+            <li>Item List 1</li>
+            <li>Item List 2</li>
+            <li>Item List 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Numbered Lists</h3>
+
+          <h4>CSS selector</h4>
+          <p>ol</p>
+
+          <h4>Sample code</h4>
+          <code>
+            &lt;ol&gt;
+              &lt;li&gt;Item List 1&lt;/li&gt;
+              &lt;li&gt;Item List 2&lt;/li&gt;
+              &lt;li&gt;Item List 3&lt;/li&gt;
+            &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element</h4>
+          <ol>
+            <li>Item List 1</li>
+            <li>Item List 2</li>
+            <li>Item List 3</li>
+          </ol>
+        </div>
+      </section>
+
+    </section>
+
+
+    <!-- Combined Elements Section --> 
     <section id="combined_elements" class="element-main">
     <h2>Combined Elements</h2>
+
+    <section class ="element">
+      <div class="grid element-grid">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector</h4>
+        <p>.nav-flex, .nav-bar, .nav-item, .logo, .nav-bar-container</p>
+
+        <h4>Sample code</h4>
+        <code>
+        &lt;nav class="nav-bar"&gt;
+          &lt;a href="https://figmashort.link/e53sp5"&gt; &lt;img src="img/logo.svg" alt="Logo" class="logo"&gt; &lt;/a&gt;
+          &lt;div class="nav-flex"&gt;
+            &lt;a class="nav-item" href="#"&gt;Home&lt;/a&gt;
+            &lt;a class="nav-item" href="#"&gt;Shop&lt;/a&gt;
+            &lt;a class="nav-item" href="#"&gt;About&lt;/a&gt;
+            &lt;a class="nav-item" href="#"&gt;Style&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+
+        </code>
+
+        <h4>Rendered element</h4>
+        <nav class="nav-bar nav-bar-container">
+          <a href="https://figmashort.link/e53sp5"> <img src="svg/NEBULA.svg" alt="Logo" class="logo"> </a>
+          <div class="nav-flex">
+            <a class="nav-item" href="#">Home</a>
+            <a class="nav-item" href="#">Shop</a>
+            <a class="nav-item" href="#">About</a>
+            <a class="nav-item" href="#">Style</a>
+          </div>
+        </nav>
+      </div>
+    </section>
 
       <section class ="element">
         <div class="grid element-grid">
