@@ -661,7 +661,7 @@ small {
 
 .img-cart {
   max-width: 12rem;
-  max-height: auto;
+  height: auto;
   display: block;
   object-fit: cover;
 }
