@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Echo Style Guide</title>
+    <title>Nebula Style Guide</title>
 
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/grid.css" rel="stylesheet" />
@@ -31,6 +31,7 @@
       </nav>
     </header>
 
+    <!--Branding Ideas Section -->
     <section id="branding_idea" class="element-main">
       <h2>Branding Idea</h2>
 
@@ -63,13 +64,14 @@
           <h3>Navigation Link</h3>
 
           <h4>CSS selector</h4>
-          <p>.btn, .btn-primary</p>
+          <p>.btn, .btn-primary, .btn-secondary</p>
 
           <h4>Sample code</h4>
           <code>&lt;a class="btn btn-primary" href="#"&gt;Navigation Button&lt;/a&gt;</code>
 
           <h4>Rendered element</h4>
           <a class="btn btn-primary" href="#">Primary Button</a>
+          <a class="btn btn-secondary" href="#">Secondary Button</a>
         </div>
       </section>
 
@@ -82,10 +84,10 @@
           <p>.in-text-link</p>
 
           <h4>Sample code</h4>
-          <code>&lt;p&gt;This is a &lt;a class="in-text-link" href="https://figmashort.link/e53sp5">link.&lt;/a&gt;&lt;/p&gt;</code>
+          <code>&lt;p&gt;This is a &lt;a class="in-text-link" href="https://figmashort.link/ncmeiH">link.&lt;/a&gt;&lt;/p&gt;</code>
 
           <h4>Rendered element</h4>
-          <p>This is a <a class="in-text-link" href="https://figmashort.link/e53sp5">link.</a></p>
+          <p>This is a <a class="in-text-link" href="https://figmashort.link/ncmeiH">link.</a></p>
         </div>
       </section>
 
@@ -124,7 +126,7 @@
 
           <h4>Rendered element</h4>
           <form>
-            <label for="question">What are you looking for?</label>
+            <label for="question">What product are you looking for?</label>
             <input type="text" id="question" placeholder="Type here...">
           </form>
         </div>
@@ -135,7 +137,7 @@
           <h3>Radio Button</h3>
 
           <h4>CSS selector</h4>
-          <p>..radio-container, .radio-group, .radio-label, .radio-input-group</p>
+          <p>.radio-container, .radio-group, .radio-label, .radio-input-group</p>
 
           <h4>Sample code</h4>
           <code>
@@ -201,162 +203,193 @@
           <p>.img, .img-product</p>
 
           <h4>Sample code</h4>
-          <code>&lt;a href="https://figmashort.link/e53sp5"&gt; &lt;img class="img img-product" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"&gt; &lt;/a&gt;</code>
+          <code>&lt;a href="https://figmashort.link/ncmeiH"&gt; &lt;img class="img img-product" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"&gt; &lt;/a&gt;</code>
 
           <h4>Rendered element</h4>
-          <a href="https://figmashort.link/e53sp5"> <img class="img img-product" src="img/rem.jpg" alt="Ariana Grande Rem Vinyl Record"> </a>
+          <a href="https://figmashort.link/ncmeiH"> <img class="img img-product"src="img/essential-drip-lip-oil.png" alt="Essential Lip Drip Oil"> </a>
+        </div>
+      </section>
+    </section>
+
+    <!-- Rendered Element Section --> 
+
+    <section id="combined_elements" class="element-main">
+    <h2>Combined Elements</h2>
+
+     <section class ="element">
+        <div class="grid element-grid">
+          <h3>Product Listing</h3>
         </div>
       </section>
 
+      <section class ="element">
+        <div class="grid element-grid">
+          <h3>Payment Form</h3>
+
+          <h4>CSS selector</h4>
+          <p>.form-label, .input-container, .input-two-column, .checkbox-group, .radio-container, .radio-group, .radio-input-group, .other-input, .btn-container, .btn, .btn-primary, .btn-default</p>
+
+          <h4>Sample code</h4>
+          <code>
+            &lt;form action=# method="post"&gt;
+
+              &lt;section class="payment-form-section"&gt;
+                &lt;h5 class="payment-form-heading"&gt;CONTACT&lt;/h5&gt;
+                &lt;div class="input-container"&gt;
+                  &lt;label class=form-label for="name"&gt;Name*&lt;/label&gt;
+                  &lt;div class="input-two-column"&gt;
+                    &lt;input type="text" id="name" name="firstName" placeholder="First Name" required&gt;
+                    &lt;input type="text" id="lastname" name="lastName" placeholder="Last Name" required&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              
+                &lt;div class="input-container"&gt;
+                  &lt;label class=form-label for="email"&gt;Email*&lt;/label&gt;
+                  &lt;input type="email" id="email" name="email" placeholder="Email Address" required&gt;
+                                  &lt;div class="checkbox-group"&gt;
+                    &lt;input type="checkbox" id="virtual" name="virtual"&gt;
+                    &lt;label for="virtual"&gt;Email me with news and offers&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+                              &lt;section class="payment-form-section"&gt;
+                &lt;h5 class="payment-form-heading"&gt;PAYMENT&lt;/h5&gt;
+                                &lt;div class="radio-container"&gt;
+                  &lt;label for="title"&gt;Payment method:&lt;/label&gt;
+                  &lt;div class="radio-group"&gt;
+                    &lt;input type="radio" id="credit" name="paymentmethod" value="credit"&gt;
+                    &lt;label class="radio-label" for="credit"&gt;Credit Card&lt;/label&gt;
+                  &lt;/div&gt;
+                &lt;div class="radio-group"&gt;
+                    &lt;input type="radio" id="debit" name="paymentmethod" value="debit"&gt;
+                    &lt;label class="radio-label" for="debit"&gt;Debit Card&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="radio-group"&gt;
+                    &lt;input type="radio" id="internet" name="paymentmethod" value="internet"&gt;
+                    &lt;label class="radio-label" for="internet"&gt;Internet Banking&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div class="radio-input-group"&gt;
+                    &lt;div class="radio-group"&gt;
+                      &lt;input type="radio" id="other" name="paymentmethod" value="other"&gt;
+                      &lt;label class="radio-label" for="other"&gt;Other:&lt;/label&gt;
+                    &lt;/div&gt;
+                      &lt;input type="text" id="otherText" name="otherText" class="other-input" placeholder="Specify method..."&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              
+                &lt;div class="input-container"&gt;
+                  &lt;label class=form-label for="creditcard"&gt;Credit Card*&lt;/label&gt;
+                  &lt;input type="text" id="creditcard" name="cardnumber" placeholder="Card Number" required&gt;
+                  &lt;div class="input-two-column"&gt;
+                    &lt;input type="text" id="creditcard" name="expirationdate" placeholder="MM/YY" maxlength="5" required&gt;
+                    &lt;input type="text" id="creditcard" name="securitynumber" placeholder="CVC" maxlength="3" required&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              
+                &lt;div class="input-container"&gt;
+                  &lt;label class=form-label for="address"&gt;Billing Address*&lt;/label&gt;
+                  &lt;input type="text" id="address" name="address" placeholder="Billing Address" required&gt;
+                &lt;/div&gt;
+              
+                &lt;div class="btn-container"&gt;
+                  &lt;input class="btn btn-primary" type="submit"&gt;
+                  &lt;input class="btn btn-default" type="reset"&gt;
+                &lt;/div&gt;
+              &lt;/section&gt;
+              
+            &lt;/form&gt;
+            </code>
+
+            <h4>Rendered element</h4>
+            <form action=# method="post">
+              <section class="payment-form-section">
+                <h5 class="payment-form-heading">Contact Information</h5>
+                <div class="input-container">
+                  <label class=form-label for="name">Name*</label>
+                  <div class="input-two-column">
+                    <input type="text" id="name" name="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastname" name="lastName" placeholder="Last Name" required>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <label class=form-label for="email">Email*</label>
+                  <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="virtual" name="virtual">
+                    <label for="virtual">Email me with news and offers</label>
+                  </div>
+                </div>
+              </section >
+
+              <section class="payment-form-section">
+                <h5 class="payment-form-heading">Payment Information</h5>
+
+                <div class="radio-container">
+                  <label for = "credit">Payment method:</label>
+                  <div class="radio-group">
+                    <input type="radio" id="credit" name="paymentmethod" value="credit">
+                    <label class="radio-label" for="credit">Credit Cards</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="debit" name="paymentmethod" value="debit">
+                    <label class="radio-label" for="debit">Debit Card</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" id="internet" name="paymentmethod" value="internet">
+                    <label class="radio-label" for="internet">Internet Banking</label>
+                  </div>
+                  <div class="radio-input-group">
+                    <div class="radio-group">
+                      <input type="radio" id="other" name="paymentmethod" value="other">
+                      <label class="radio-label" for="other">Other:</label>
+                    </div>
+                    <input type="text" id="otherText" name="otherText" class="other-input" placeholder="Specify method...">
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <label class=form-label for="creditcard">Card Information*</label>
+                  <input type="text" id="creditcard" name="cardnumber" placeholder="Card Number" required>
+                  <div class="input-two-column">
+                    <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY" maxlength="5" required>
+                    <input type="text" id="securitynumber" name="securitynumber" placeholder="CVC" maxlength="3" required>
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <label class=form-label for="address">Address*</label>
+                  <input type="text" id="street" name="street" placeholder="Street Name" required>
+                  <input type="text" id="city" name="city" placeholder="City" required>
+                  <select name="provinceName" id="provinceName" placeholder="Province">
+                    <option value=" "  selected disabled hidden> Select a Province </option>
+                    <option value="alberta">Alberta</option>
+                    <option value="britishColumbia">British Columbia</option>
+                    <option value="manitoba">Manitoba</option>
+                    <option value="newBrun">New Brunswick</option>
+                    <option value="newAndLab">Newfoundland and Labrador</option>
+                    <option value="novaScotia">Nova Scotia</option>
+                    <option value="ontario">Ontario</option>
+                    <option value="princeEdward">Prince Edward Island</option>
+                    <option value="saskatchewan">Saskatchewan</option>
+                  </select>
+                  <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+
+                </div>
+
+                <div class="btn-container">
+                  <input class="btn btn-primary" type="submit">
+                  <input class="btn btn-default" type="reset">
+                </div>
+              </section>
+
+            </form>
+          </div>
+        </section>
+  
     </section>
 
-
-
-    <section class="shop-banner">
-      <h1 class="shop-title">All Products</h1>
-    </section>
-
-    <section class="element-main">
-      <div class="grid element-grid">
-        <div class="product-listing product-flex">
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/mtvunplugged.jpg"
-                  alt="Ariana Grande Rem Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">MTV Unplugged Vinyl Record</h4>
-            <h5 class="artist-name">Bastille</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/familia.jpg"
-                  alt="Bastille MTV Unplugged Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Familia Vinyl Record</h4>
-            <h5 class="artist-name">Camila Cabelo</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/position.jpg"
-                  alt="Camila Cabelo Familia Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Positions Vinyl Record</h4>
-            <h5 class="artist-name">Ariana Grande</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/1989.jpg"
-                  alt="Ariana Grande Positions Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">1989 Vinyl Record</h4>
-            <h5 class="artist-name">Taylor Swift</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/planether1.jpg"
-                  alt="Doja Cat Planet Her Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Planet Her Vinyl Record</h4>
-            <h5 class="artist-name">Doja Cat</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/thankunext.jpg"
-                  alt="Ariana Grande Thank U Next Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Thank U Next Vinyl Record</h4>
-            <h5 class="artist-name">Ariana Grande</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/rem.jpg"
-                  alt="Ariana Grande Rem Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">REM Vinyl Record</h4>
-            <h5 class="artist-name">Ariana Grande</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/charlieputh.jpg"
-                  alt="Charlie Puth Charlie Puth Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Charlie Puth Vinyl Record</h4>
-            <h5 class="artist-name">Charlie Puth</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-          <div class="product-container">
-            <div class="image-container">
-              <a href="#">
-                <img
-                  class="img img-product"
-                  src="img/sweetener.jpg"
-                  alt="Ariana Grande Sweetener Vinyl Record"
-                />
-              </a>
-            </div>
-            <h4 class="product-name">Sweetener Vinyl Record</h4>
-            <h5 class="artist-name">Ariana Grande</h5>
-            <p class="product-price">$59.99</p>
-            <a class="btn-primary product-button" href="cart-sample.html">Add to Cart</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer class="footer-container">
       <div class="footer-box">
