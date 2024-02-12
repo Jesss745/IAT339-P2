@@ -20,13 +20,13 @@
   <body>
     <header>
       <nav class="nav-bar">
-        <a href="style-guide.html">
+        <a href="style_guide_page.html">
           <img src="img/logo.svg" alt="Logo" class="logo" />
         </a>
         <div class="nav-flex">
-          <a class="nav-item" href="style-guide.html">Style Guide</a>
-          <a class="nav-item" href="shop-sample.html">Shop Sample</a>
-          <a class="nav-item" href="cart-sample.html">Cart Sample</a>
+          <a class="nav-item" href="style_guide_page.html">Style Guide</a>
+          <a class="nav-item" href="shop_sample_page.html">Shop Sample</a>
+          <a class="nav-item" href="cart_sample_page.html">Cart Sample</a>
         </div>
       </nav>
     </header>
@@ -57,6 +57,7 @@
       </section>
     </section>
 
+    <!--Interactive Elements Section -->
     <section id="interactive_elements" class="element-main">
       <h2>Interactive Elements</h2>
       <section class ="element">
@@ -70,8 +71,11 @@
           <code>&lt;a class="btn btn-primary" href="#"&gt;Navigation Button&lt;/a&gt;</code>
 
           <h4>Rendered element</h4>
-          <a class="btn btn-primary" href="#">Primary Button</a>
-          <a class="btn btn-secondary" href="#">Secondary Button</a>
+          <div class="btn-container">
+            <a class="btn btn-default" href="#">Default Button</a>
+            <a class="btn btn-primary" href="#">Primary Button</a>
+            <a class="btn btn-secondary" href="#">Secondary Button</a>
+          </div>
         </div>
       </section>
 
@@ -108,7 +112,7 @@
           <h4>Rendered element</h4>
           <div class="btn-container">
             <input class="btn btn-primary" type="submit">
-            <input class="btn btn-default" type="reset">
+            <input class="btn btn-secondary" type="reset">
           </div>
         </div>
       </section>

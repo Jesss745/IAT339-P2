@@ -1,10 +1,21 @@
 html{
-
+  font-size: 16px;
 }
 
 body{
-  font-family: 'Assistant', sans-serif;
+  font-family: 'Suisse Intl Trial', sans-serif;
   color: var(--neutral-700);
+  margin: 0rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom-width: 0.05rem;
+  border-bottom-style: solid;
+  border-bottom-color: var(--bg);
 }
 
 section {
@@ -20,7 +31,7 @@ section {
   padding-bottom: 0.25rem;
   border-top-width: 0.075rem;
   border-top-style: solid;
-  border-top-color: var(--border);
+  border-top-color: var(--bg);
 }
 
 .element-main {
@@ -32,11 +43,62 @@ section {
 }
 
 code {
-  background-color: var(--blue-600);
-  padding: 0.5rem;
+  background-color: var(--bg);
+  padding: 1rem;
   display: block;
-  border-radius: 0.5rem;
   color: var(--neutral-900);
+  font-size: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom-width: 0.05rem;
+  border-bottom-style: solid;
+  border-bottom-color: var(--purple-400);
+}
+
+h1{
+  font-family: "GT Super Ds Trial", serif;
+  font-size: 2.5rem;
+  margin-top: 0rem;
+}
+
+h2 {
+  color: var(--purple-400);
+  font-family: "GT Super Ds Trial", serif;
+  margin-top: 4rem;
+  font-size: 2.0rem;
+}
+
+h3 {
+  color: var(--purple-600);
+  font-family: "GT Super Ds Trial", serif;
+  margin-top: 2rem;
+  font-size: 1.65rem;
+}
+
+h4 {
+  font-family: "GT Super Ds Trial", serif;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-family: "GT Super Ds Trial", serif;
+  font-size: 1rem;
+}
+
+h6 {
+  font-family: "GT Super Ds Trial", serif;
+  font-size: 0.8rem;
+}
+
+p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 /* 
@@ -48,6 +110,25 @@ code {
 
 .btn {
   width:fit-content;
+  border-radius: 0;
+}
+
+.btn-default {
+  display: inline-block;
+  padding: 0.8em 1.5em;
+  color: var(--neutral-900);
+  background-color: var(--neutral-00);
+  border: 1px solid var(--neutral-300);
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 0.5s ease-out;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.btn-default:hover, .btn-default:focus {
+  border-color: var(--neutral-700);
+  background-color: var(--neutral-00);
 }
 
 .btn-primary {
@@ -59,6 +140,7 @@ code {
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   border: none;
+  font-size: 1rem;
 }
 
 .btn-primary:hover, .btn-primary:focus {
@@ -68,36 +150,19 @@ code {
 
 .btn-secondary {
   display: inline-block;
-  padding: 0.8em 3.5em;
+  padding: 0.8em 1.5em;
   color: var(--neutral-00);
   background-color: var(--neutral-900);
   text-align: center;
   text-decoration: none;
   transition: background-color 0.5s ease-out;
   border: none;
+  font-size: 1rem;
 }
 
-.btn-secondary:hover, .btn-primary:focus {
+.btn-secondary:hover, .btn-secondary:focus {
   background-color: var(--neutral-700);
   border: none;
-  font-weight: bold;
-}
-
-
-.btn-default {
-  display: inline-block;
-  padding: 0.8em 1.5em;
-  color: var(--neutral-900);
-  background-color: var(--neutral-00);
-  text-decoration: none;
-  transition: background-color 0.5s ease-out;
-  font-family: "CircularXXTrial", sans-serif;
-  border-color: var(--neutral-300);
-}
-
-.btn-default:hover, .btn-default:focus {
-  background-color: var(--neutral-300);
-  border-color: var(--neutral-300);
 }
 
 .btn-container {
@@ -109,14 +174,14 @@ code {
 /* Styling for the in-text links */
 
 .in-text-link {
-  color: var(--blue-700);
+  color: var(--bg-900);
   transition: color 0.25s ease-out;
   font-weight: bold;
   letter-spacing: 0.025rem;
 }
 
 .in-text-link:hover, .in-text-link:focus {
-  color: var(--interactive);
+  color: var(--bg-1000);
 }
 
 /* Styling for form elements */
@@ -136,7 +201,6 @@ label {
 input {
   padding: 0.25rem;
   border: 0.1rem solid var(--blue-900);
-  border-radius: 0.35rem;
   border-color: var(--blue-600);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;

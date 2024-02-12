@@ -2,6 +2,7 @@
     /* BRAND COLORS */
     --bg: #EAEEEF;
     --bg-900:#9EB2B7;
+    --bg-1000:#7D989F;
  
     --interactive: #AFD1DE;
     --interactive-hover: #7BB4CA;
@@ -15,7 +16,7 @@
     --pink-600:#D0B4D2;
 
     --neutral-00: #FFFFFF;
-    --neutral-300: #C6C6C6;
+    --neutral-300: #D8D8D8;
     --neutral-700: #404040;
     --neutral-900: #202020;
   }
