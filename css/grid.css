@@ -3,9 +3,7 @@ display: grid;
 }
 
 .product-listing {
-  display: grid; 
-  padding: 1.5rem;
-  grid-gap: 4rem;
+  display: grid;
 }
 
 .imagery-listing {
