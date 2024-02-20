@@ -376,7 +376,7 @@
           <h3>Product Listing</h3>
 
           <h4>CSS selector</h4>
-          <p>.product-listing, .product-container, .image-container, .img, .img-product, .product-name, .product-color, .product-price, .btn-secondary, .product-button</p>
+          <p>.product-listing, .product-listing-container, .product-shade, .product-container, .image-container, .img, .img-product, .product-name, .product-color, .product-price, .btn-secondary, .product-button</p>
 
           <h4>Sample code</h4>
           <code>
@@ -577,7 +577,7 @@
 
                   <div class="checkbox-group">
                     <input type="checkbox" id="virtual" name="virtual">
-                    <label for="virtual">Email me with news and offers</label>
+                    <label class="check-label" for="virtual">Email me with news and offers</label>
                   </div>
                 </div>
               </section >
@@ -599,13 +599,6 @@
                     <input type="radio" id="internet" name="paymentmethod" value="internet">
                     <label class="radio-label" for="internet">Internet Banking</label>
                   </div>
-                  <div class="radio-input-group">
-                    <div class="radio-group">
-                      <input type="radio" id="other" name="paymentmethod" value="other">
-                      <label class="radio-label" for="other">Other:</label>
-                    </div>
-                    <input type="text" id="otherText" name="otherText" class="other-input" placeholder="Specify method...">
-                  </div>
                 </div>
 
                 <div class="input-container">
@@ -618,28 +611,30 @@
                 </div>
 
                 <div class="input-container">
-                  <label class=form-label for="address">Address*</label>
+                  <label class=form-label for="address">Delivery</label>
                   <input type="text" id="street" name="street" placeholder="Street Name" required>
-                  <input type="text" id="city" name="city" placeholder="City" required>
-                  <select name="provinceName" id="provinceName" placeholder="Province">
-                    <option value=" "  selected disabled hidden> Select a Province </option>
-                    <option value="alberta">Alberta</option>
-                    <option value="britishColumbia">British Columbia</option>
-                    <option value="manitoba">Manitoba</option>
-                    <option value="newBrun">New Brunswick</option>
-                    <option value="newAndLab">Newfoundland and Labrador</option>
-                    <option value="novaScotia">Nova Scotia</option>
-                    <option value="ontario">Ontario</option>
-                    <option value="princeEdward">Prince Edward Island</option>
-                    <option value="saskatchewan">Saskatchewan</option>
-                  </select>
-                  <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
-
+                  <div class="input-three-column">
+                      <input type="text" id="city" name="city" placeholder="City" required>
+                      <select name="provinceName" id="provinceName" placeholder="Province">
+                      <option value=" "  selected disabled hidden>Province</option>
+                      <option value="alberta">Alberta</option>
+                      <option value="britishColumbia">British Columbia</option>
+                      <option value="manitoba">Manitoba</option>
+                      <option value="newBrun">New Brunswick</option>
+                      <option value="newAndLab">Newfoundland and Labrador</option>
+                      <option value="novaScotia">Nova Scotia</option>
+                      <option value="ontario">Ontario</option>
+                      <option value="princeEdward">Prince Edward Island</option>
+                      <option value="saskatchewan">Saskatchewan</option>
+                      </select>
+                      <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+                  </div>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                 </div>
 
                 <div class="btn-container">
-                  <input class="btn btn-primary" type="submit">
-                  <input class="btn btn-secondary" type="reset">
+                  <input class="btn btn-secondary" type="submit">
+                  <input class="btn btn-primary" type="reset">
                 </div>
               </section>
 
@@ -767,7 +762,7 @@
             <p class="total-price">$59.99</p>
 
             <div class = "cart-info cart-info-grid">
-              <img class="img" src="img/lustrous-liquid-eyeshadow.png" alt="Lustrous Liquid Eyeshadow in the Shade Lab Coat">
+              <img class="img " src="img/lustrous-liquid-eyeshadow.png" alt="Lustrous Liquid Eyeshadow in the Shade Lab Coat">
               <div class="cart-product-name">
                 <p class="mini-product-name">Lustrous Liquid Eyeshadow</p>
                 <p class="mini-product-shade">Shade: Lab Coat</p>
@@ -790,7 +785,7 @@
             <p class="total-price final-price">$201.56</p>
           </div>
 
-          <a class="btn-primary checkout-button" href="#">Proceed to Check Out</a>
+          <a class="btn btn-secondary checkout-button" href="#">Proceed to Check Out</a>
 
         </div>
       </section>
