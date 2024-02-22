@@ -27,6 +27,11 @@ display: grid;
   display: grid;
 }
 
+.checkout-page {
+  margin: 0rem;
+  display: grid;
+}
+
 @media (min-width: 0rem) {
   .grid {
     grid-template-columns: 1fr;
@@ -74,6 +79,18 @@ display: grid;
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .payment-method {
+    margin-bottom: 4rem;
+    padding-top: 0rem;
+  }
+
+  .order-summary {
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 12rem;
+  }
+  
 }
 
 @media (min-width: 20rem) {
@@ -111,6 +128,14 @@ display: grid;
   }
 }
 
+@media (min-width: 34rem) {
+  .order-summary {
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 9rem;
+  }
+}
+
 @media (min-width: 40rem) {
   .checkout-cart {
     grid-template-columns: 1fr 1fr 1fr;
@@ -135,6 +160,14 @@ display: grid;
     width: 100%;
     row-gap: 1rem;
     padding: 2rem 0rem;
+  }
+}
+
+@media (min-width: 45.5rem) {
+  .order-summary {
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 6rem;
   }
 }
 
@@ -197,6 +230,12 @@ display: grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0rem;
+  }
+
+  .payment-method {
+    position: sticky;
+    margin-bottom: 4rem;
+    padding-top: 6rem;
   }
 }
 

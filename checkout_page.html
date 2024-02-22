@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nebula Style Guide</title>
+
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/grid.css" rel="stylesheet" type="text/css"/>
+    <link href="css/token.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="nav-flex">
+          <a class="nav-item" href="shop_page.html">Shop</a>
+          <a class="nav-item" href="about_page.html">About</a>
+          <a class="nav-item" href="events_page.html">Events</a>
+        </div>
+        <a href="style_guide_page.html">
+          <img src="svg/NEBULA.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="nav-flex">
+          <a class="nav-item" href="style_guide_page.html">Style Guide</a>
+          <a class="nav-item" href="contact_page.html">Contact</a>
+          <a class="nav-item" href="cart_page.html">Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="checkout-page">
+
+        <section class="payment-method element-main">
+            <div>
+                <h2 class="cart-title">Payment Method</h2>
+            </div>
+            <form action=# method="post">
+                <section class="payment-form-section">
+                  <h4 class="payment-form-heading">Contact Information</h4>
+                  <div class="input-container">
+                    <label class=form-label for="name">Name</label>
+                    <div class="input-two-column">
+                      <input type="text" id="name" name="firstName" placeholder="First Name" required>
+                      <input type="text" id="lastname" name="lastName" placeholder="Last Name" required>
+                    </div>
+                  </div>
+  
+                  <div class="input-container">
+                    <label class=form-label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+  
+                    <div class="checkbox-group">
+                      <input type="checkbox" id="virtual" name="virtual">
+                      <label class="check-label" for="virtual">Email me with news and offers</label>
+                    </div>
+                  </div>
+                </section >
+  
+                <section class="payment-form-section">
+                  <h4 class="payment-form-heading">Payment Information</h4>
+  
+                  <div class="input-container">
+                    <label class=form-label for="creditcard">Card Information</label>
+                    <input type="text" id="creditcard" name="cardnumber" placeholder="Card Number" required>
+                    <div class="input-two-column">
+                      <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY" maxlength="5" required>
+                      <input type="text" id="securitynumber" name="securitynumber" placeholder="CVC" maxlength="3" required>
+                    </div>
+                  </div>
+  
+                  <div class="input-container">
+                    <label class=form-label for="address">Delivery</label>
+                    <input type="text" id="street" name="street" placeholder="Street Name" required>
+                    <div class="input-three-column">
+                        <input type="text" id="city" name="city" placeholder="City" required>
+                        <select name="provinceName" id="provinceName" placeholder="Province">
+                        <option value=" "  selected disabled hidden>Province</option>
+                        <option value="alberta">Alberta</option>
+                        <option value="britishColumbia">British Columbia</option>
+                        <option value="manitoba">Manitoba</option>
+                        <option value="newBrun">New Brunswick</option>
+                        <option value="newAndLab">Newfoundland and Labrador</option>
+                        <option value="novaScotia">Nova Scotia</option>
+                        <option value="ontario">Ontario</option>
+                        <option value="princeEdward">Prince Edward Island</option>
+                        <option value="saskatchewan">Saskatchewan</option>
+                        </select>
+                        <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+                    </div>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                  </div>
+  
+                  <div class="btn-container">
+                    <input class="btn btn-secondary" type="submit">
+                    <input class="btn btn-primary" type="reset">
+                  </div>
+                </section>
+  
+              </form>
+        </section>
+
+        <section class="order-summary element-main">
+            <div>
+                <h2 class="cart-title">Order Summary</h2>
+            </div>
+            <div class="order-list">
+                <div class="order-container">
+                    <div class = "cart-info">
+                        <img class="img-checkout" src="img/essential-drip-lip-oil.png" alt="Essential Drip Lip Oil Lavender Kiss">
+                        <div class="cart-product-name">
+                            <p class="checkout-product-name">Essential Drip Lip Oil</p>
+                            <p class="checkout-product-shade">Lavender Kiss</p>
+                            <small class="checkout-qty">QTY: 1</small>
+                        </div>
+                    </div>
+                    <p class="total-price checkout-price">$17.00</p>
+                </div>
+            </div>
+
+            <div class="total-container">
+                <div class="total-list">
+                    <p class="cart-price checkout-price">Subtotal</p>
+                    <p class="cart-price checkout-price">Tax</p>
+                    <p class="cart-price final-price">Total</p>
+                </div>
+                <div class="total-list">
+                    <p class="total-price checkout-price">$17.00</p>                
+                    <p class="total-price checkout-price">$1.52</p>
+                    <p class="total-price final-price">$18.52</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- // FOOTER SECTION -->
+    <footer class="footer-container">
+      <div class="footer-box">
+        <img src="svg/NEBULA.svg" alt="Logo" class="footer-logo" />
+
+        <div class="footer-nav-container">
+          <div class="footer-nav">
+            <h5 class="footer-title">Discover</h5>
+            <a class="footer-link" href="shop_page.html">Shop</a>
+            <a class="footer-link" href="about_page.html">About</a>
+            <a class="footer-link" href="events_page.html">Events</a>
+            <a class="footer-link" href="style_guide_page.html">Style Guide</a>
+            <a class="footer-link" href="contact_page.html">Contact</a>
+            <a class="footer-link" href="cart_page.html">Cart</a>
+          </div>
+
+          <div class="footer-nav">
+            <h5 class="footer-title">Guidelines</h5>
+            <a class="footer-link" href="#branding_idea">Branding Idea</a>
+            <a class="footer-link" href="#interactive_elements"
+              >Interactive Elements</a
+            >
+            <a class="footer-link" href="#text_elements">Text Elements</a>
+            <a class="footer-link" href="#combined_elements"
+              >Combined Elements</a
+            >
+            <a class="footer-link" href="#design_guidelines"
+              >Design Guidelines</a
+            >
+            <a class="footer-link" href="#citation">Citation</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
