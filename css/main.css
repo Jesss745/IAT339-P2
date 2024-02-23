@@ -986,3 +986,15 @@ textarea:focus-visible,textarea:focus-visible {
   justify-self: end;
   min-width: 12rem;
 }
+
+/* PRODUCT PAGE  ----------------------
+*/
+
+.product-shades {
+  width:30%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top:0.5rem;
+  background-color: none;
+}
