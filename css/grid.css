@@ -86,8 +86,6 @@ display: grid;
     padding-top: 0rem
   }
   .element-secondary{
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
     padding-top: 12rem;
   }
   .element-tertiary{
@@ -136,8 +134,6 @@ display: grid;
 
 @media (min-width: 34rem) {
   .element-secondary {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
     padding-top: 9rem;
   }
   .element-tertiary {
@@ -175,8 +171,6 @@ display: grid;
 
 @media (min-width: 45.5rem) {
   .element-secondary {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
     padding-top: 6rem;
   }
   .element-tertiary {
