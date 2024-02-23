@@ -85,9 +85,14 @@ display: grid;
     margin-bottom: 4rem;
     padding-top: 0rem
   }
-  .order-summary{
+  .element-secondary{
     padding-bottom: 0rem;
     margin-bottom: 0rem;
+    padding-top: 12rem;
+  }
+  .element-tertiary{
+    margin-bottom: 0rem;
+    margin-top: 10rem;
   }
   .support-page{
     grid-template-columns: 1fr;
@@ -130,10 +135,14 @@ display: grid;
 }
 
 @media (min-width: 34rem) {
-  .order-summary {
+  .element-secondary {
     padding-bottom: 0rem;
     margin-bottom: 0rem;
     padding-top: 9rem;
+  }
+  .element-tertiary {
+    margin-bottom: 0rem;
+    margin-top: 7rem;
   }
 }
 
@@ -165,10 +174,14 @@ display: grid;
 }
 
 @media (min-width: 45.5rem) {
-  .order-summary {
+  .element-secondary {
     padding-bottom: 0rem;
     margin-bottom: 0rem;
     padding-top: 6rem;
+  }
+  .element-tertiary {
+    margin-bottom: 0rem;
+    margin-top: 4rem;
   }
 }
 

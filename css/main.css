@@ -83,7 +83,6 @@ section {
   margin-top: 0rem;
   margin-bottom: 0rem;
   padding: 8rem 6rem;
-  padding-top: 12rem;
   background-color: var(--bg);
   color: var(--neutral-50);
 }
@@ -819,7 +818,6 @@ span {
 */
 
 .cart-page {
-  margin-top: 10rem;
   margin-bottom: 6rem;
   padding-bottom: 0.25rem;
 }
@@ -898,7 +896,6 @@ span {
   display: flex;
   justify-content: center;
   color: var(--bg-900);
-  margin-top: 10rem;
 }
 
 .shop-section {
