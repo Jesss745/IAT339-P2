@@ -29,6 +29,11 @@ display: grid;
   display: grid;
 }
 
+.checkout-page{
+  margin: 0rem;
+  display: grid;
+}
+
 .support-page{
   display: grid;
 }
@@ -79,6 +84,16 @@ display: grid;
     margin-bottom: 0rem;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .payment-method{
+    margin-bottom: 4rem;
+    padding-top: 0rem
+  }
+
+  .order-summary{
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
   }
 
   .support-page{
