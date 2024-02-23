@@ -29,6 +29,10 @@ display: grid;
   display: grid;
 }
 
+.support-page{
+  display: grid;
+}
+
 @media (min-width: 0rem) {
   .grid {
     grid-template-columns: 1fr;
@@ -75,6 +79,10 @@ display: grid;
     margin-bottom: 0rem;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .support-page{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -163,6 +171,10 @@ display: grid;
     width: 100%;
     row-gap: 1rem;
     padding: 2rem 0rem;
+  }
+
+  .support-page{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -261,6 +273,10 @@ display: grid;
     width: 100%;
     row-gap: 1rem;
     padding: 2rem 0rem;
+  }
+
+  .support-page{
+    grid-template-columns: 2fr 1fr;
   }
 }
 
