@@ -51,16 +51,16 @@
     </section>
 
 
-    <section class="Customer-Support-Feedback">
+    <div class="Customer-Support-Feedback">
       <h2> If you have any questions or concerns, we’d love to hear from you </h2>
       <div class="input-container">
-        <label class=form-label for="name">Name*</label>
+        <label class=form-label for="name">Name</label>
           <input type="text" id="name" name="firstName" placeholder="First Name" required>
           <input type="text" id="lastname" name="lastName" placeholder="Last Name" required>
         </div>
 
       <div class="input-container">
-        <label class=form-label for="email">Email Address*</label>
+        <label class=form-label for="email">Email Address</label>
           <input type="email" id="email" name="email" placeholder="Email Address" required>
       </div>
 
@@ -71,9 +71,13 @@
 
        <div class="input-container">
         <label class=form-label for="problemExplained">Please Tell Us How We Can Help</label>
-          <textarea id="problem" name="problem">Please Include Any Necessary Information</textarea>
+          <textarea id="problem" name="problem">Please Include all Necessary Information</textarea>
       </div>
-    </section>
+
+      <div class="btn-container">
+          <input class="btn btn-primary" type="submit">
+        </div>
+    </div>
 
     <!-- // FOOTER SECTION -->
     <footer class="footer-container">
