@@ -1053,3 +1053,54 @@ textarea:focus-visible,textarea:focus-visible {
   font-size: 1.5rem;
   color: var(--neutral900);
 }
+
+/* ABOUT PAGE  ----------------------
+*/
+
+.about-nebula{
+  background-color: var(--bg);
+  width:100%;
+  align-items: center;
+}
+
+.founder-quote{
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-inclusivity{
+  background-color: var(--bg);
+  align-items: center;
+}
+
+.about-content{
+  margin-right: 6.5rem;
+  margin-left: 6.5rem;
+}
+
+.about-content p{
+  margin-bottom: 1rem;
+}
+
+.about-content h3, h5{
+  text-align: center;
+}
+
+.about-images {
+  margin: 5rem;
+}
+
+.about-images-product {
+  margin: 0rem;
+}
+
+.about-images img{
+  width: auto;
+  max-width: 25rem;
+}
+
+.about-images-product img{
+  width: auto;
+  max-width: 35rem;
+}
