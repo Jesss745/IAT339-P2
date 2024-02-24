@@ -923,6 +923,7 @@ span {
   display: flex;
   justify-content: center;
   color: var(--bg-900);
+  margin-top: 3rem;
 }
 
 .shop-section {
