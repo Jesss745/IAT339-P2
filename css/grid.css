@@ -99,9 +99,12 @@ display: grid;
     margin-bottom: 4rem;
     padding-top: 0rem
   }
-  .order-summary{
-    padding-bottom: 0rem;
+  .element-secondary{
+    padding-top: 12rem;
+  }
+  .element-tertiary{
     margin-bottom: 0rem;
+    margin-top: 10rem;
   }
   .support-page{
     grid-template-columns: 1fr;
@@ -153,9 +156,7 @@ display: grid;
 }
 
 @media (min-width: 34rem) {
-  .order-summary {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
+  .element-secondary {
     padding-top: 9rem;
   }
    .product-reccomendations{
@@ -164,6 +165,10 @@ display: grid;
 
   .product-information{
     grid-template-columns: 1fr 1fr;
+  }
+  .element-tertiary {
+    margin-bottom: 0rem;
+    margin-top: 7rem;
   }
 }
 
@@ -199,14 +204,16 @@ display: grid;
 }
 
 @media (min-width: 45.5rem) {
-  .order-summary {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
+  .element-secondary {
     padding-top: 6rem;
   }
 
   .product-reccomendations{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .element-tertiary {
+    margin-bottom: 0rem;
+    margin-top: 4rem;
   }
 }
 
