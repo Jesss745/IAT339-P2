@@ -194,18 +194,6 @@ display: grid;
     margin-bottom: 0rem;
     margin-top: 7rem;
   }
-
-  .about-nebula{
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .founder-quote{
-   grid-template-columns: 1fr 1fr;
-  }
-
-  .about-inclusivity{
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (min-width: 40rem) {
@@ -308,6 +296,18 @@ display: grid;
     width: 100%;
     row-gap: 1rem;
     padding: 2rem 0rem;
+  }
+
+  .about-nebula{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .founder-quote{
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .about-inclusivity{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
