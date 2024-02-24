@@ -48,6 +48,18 @@ display: grid;
   display: grid;
 }
 
+.about-nebula{
+  display: grid;
+}
+
+.founder-quote{
+  display: grid;
+}
+
+.about-inclusivity{
+  display: grid;
+}
+
 @media (min-width: 0rem) {
   .grid {
     grid-template-columns: 1fr;
@@ -117,6 +129,18 @@ display: grid;
   .product-reccomendations{
     grid-template-columns: 1fr;
   }
+
+  .about-nebula{
+    grid-template-columns: 1fr;
+  }
+
+  .founder-quote{
+   grid-template-columns: 1fr;
+  }
+
+  .about-inclusivity{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 20rem) {
@@ -169,6 +193,18 @@ display: grid;
   .element-tertiary {
     margin-bottom: 0rem;
     margin-top: 7rem;
+  }
+
+  .about-nebula{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .founder-quote{
+   grid-template-columns: 1fr 1fr;
+  }
+
+  .about-inclusivity{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
