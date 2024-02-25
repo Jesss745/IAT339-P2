@@ -451,6 +451,9 @@ select:invalid,select option[value=""] {
   height: auto;
   width:10%;
   margin-right:.2rem;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
 .img-product:hover {
@@ -532,15 +535,30 @@ select:invalid,select option[value=""] {
   margin-bottom: 1rem;
 }
 
-.product-shade {
+.product-shade-display {
   transition: transform 0.2s;
-  height: auto;
-  width:10%;
-  margin-right:.2rem;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
 }
 
-.product-shade:hover {
-  transform: scale(1.1);
+.product-shade-crop {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--neutral-300);
+}
+
+.product-shade-display:hover {
+  transform: scale(1.35);
+}
+
+.product-shade-crop:hover {
+  border: 1px solid var(--pink-600);
 }
 
 .product-shade-container {
@@ -703,6 +721,15 @@ small {
 }
 
 /* Stack Overflow. n.d. Remove white space below image. Retrieved from https://stackoverflow.com/questions/7774814/remove-white-space-below-image */
+
+.img-crop {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
 
 .img-product {
   transition: transform 0.2s;
@@ -896,6 +923,7 @@ span {
   display: flex;
   justify-content: center;
   color: var(--bg-900);
+  margin-top: 3rem;
 }
 
 .shop-section {
