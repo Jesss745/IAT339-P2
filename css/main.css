@@ -265,7 +265,7 @@ p {
 }
 
 .in-text-link:hover, .in-text-link:focus {
-  color: var(--bg-900);
+  color: var(--pink-600);
 }
 
 /* Styling for form elements */
@@ -931,6 +931,12 @@ span {
   padding: 0rem;
 }
 
+.more-button {
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+
 /* CONTACT PAGE ELEMENTS ---------------
 */
 
@@ -1136,4 +1142,275 @@ textarea:focus-visible,textarea:focus-visible {
 .about-images-product img{
   width: auto;
   max-width: 35rem;
+}
+
+/* LANDING PAGE  ----------------------
+*/
+
+/* Homepage: Banner */
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-img {
+  align-items: right;
+  width: 100vw;
+  height: auto;
+}
+
+.banner-section {
+  margin: 0;
+  position:relative;
+  padding: 0;
+}
+
+@media (min-width: 0rem) {
+  .banner-img {
+    align-items: right;
+    width: 100vw;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+  } 
+  .banner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 3rem;
+    max-width: 32rem;
+    margin: 0 0 2rem 0;
+    color: var(--bg);
+  }  
+  .banner-content {
+    margin: 0 0 2rem 0;
+    max-width: 32rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--neutral-00);
+  }
+}
+
+@media (min-width: 68rem) {
+  .banner-img {
+    align-items: right;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    display: block;
+  }  
+  .banner-container {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:6rem;
+    text-align: left;
+  }
+  .banner-title {
+    font-size: 3rem;
+    max-width: 32rem;
+    margin: 0 0 2rem 0;
+    color: var(--bg);
+  }  
+  .banner-content {
+    margin: 0 0 2rem 0;
+    max-width: 32rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--neutral-00);
+  }
+}
+
+/* Homepage: Greeting */
+
+
+.greeting-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 8rem 0rem;
+}
+
+.greeting-title {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+.greeting-content {
+  margin: 0 0 4rem 0;
+  max-width: 40rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.greeting-img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Homepage: Bestseller Listing */
+
+.bestseller-section {
+  margin: 8rem 0 0 0;
+}
+
+/* Homepage: Event */
+
+.event-section {
+  margin: 0;
+  position:relative;
+  padding: 0;
+}
+
+@media (min-width: 0rem) {
+  .event-img {
+    align-items: right;
+    width: 100vw;
+    height: 50rem;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+  } 
+  .event-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .event-title {
+    font-size: 3rem;
+    max-width: 32rem;
+    margin: 0 0 2rem 0;
+    color: var(--bg);
+  }  
+  .event-content {
+    margin: 0 0 2rem 0;
+    max-width: 32rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--neutral-00);
+  }
+}
+
+@media (min-width: 68rem) {
+  .event-img {
+    align-items: right;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+    display: block;
+  }  
+  .event-container {
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:6rem;
+    text-align: left;
+  }
+  .event-title {
+    font-size: 3rem;
+    max-width: 32rem;
+    margin: 0 0 2rem 0;
+    color: var(--bg);
+  }  
+  .event-content {
+    margin: 0 0 2rem 0;
+    max-width: 32rem;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: var(--neutral-00);
+  }
+}
+
+/* Homepage: About */
+
+.about-img {
+  padding: 0;
+  margin: 0;
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin: 0 0 2rem 0;
+}
+
+.about-content {
+  margin: 0 0 2rem 0;
+  max-width: 40rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 0rem) {
+  .about-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-img {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .about-container {
+    margin: 6rem;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 60rem) {
+  .about-section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the top */
+  }
+  .about-img {
+    margin: 0;
+    padding: 0;
+    margin-right: 6rem; /* Add some spacing between image and text */
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  .about-container {
+    margin: auto 0; /* Vertically center align when small */
+    margin-right: 6rem;
+    padding: 0;
+    text-align: left;
+  }
 }
