@@ -48,6 +48,10 @@ display: grid;
   display: grid;
 }
 
+.product-review-section{
+  display: grid;
+}
+
 .about-nebula{
   display: grid;
 }
@@ -59,6 +63,11 @@ display: grid;
 .about-inclusivity{
   display: grid;
 }
+
+.contact-page{
+  display: grid;
+}
+
 
 @media (min-width: 0rem) {
   .grid {
@@ -107,17 +116,21 @@ display: grid;
     display: flex;
     flex-direction: column-reverse;
   }
+
   .payment-method{
     margin-bottom: 4rem;
     padding-top: 0rem
   }
+
   .element-secondary{
     padding-top: 12rem;
   }
+
   .element-tertiary{
     margin-bottom: 0rem;
     margin-top: 10rem;
   }
+
   .support-page{
     grid-template-columns: 1fr;
   }
@@ -139,6 +152,14 @@ display: grid;
   }
 
   .about-inclusivity{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page{
+    grid-template-columns: 1fr;
+  }
+
+  .product-review-section{
     grid-template-columns: 1fr;
   }
 }
@@ -225,6 +246,10 @@ display: grid;
   .item-add{
     grid-template-columns: 1fr 3fr;
   }
+
+  .contact-page{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 45.5rem) {
@@ -308,6 +333,14 @@ display: grid;
 
   .about-inclusivity{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-page{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-review-section{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
