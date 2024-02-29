@@ -1042,6 +1042,23 @@ textarea:focus-visible,textarea:focus-visible {
   margin-top: 6rem;
 }
 
+.product-details h5{
+  text-align: unset;
+  font-weight: 100;
+  margin-bottom: 0rem;
+}
+
+.product-details h3{
+  color: var(--neutral-900);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-details p{
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
 .item-add{
   margin-top: 1rem;
 }
