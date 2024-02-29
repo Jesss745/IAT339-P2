@@ -955,18 +955,23 @@ span {
   margin-bottom: 1rem;
 }
 
+.contact-information img {
+  margin-right: 1rem;
+} 
 
-.contact-information img{
-  margin-right:2rem;
+.customer-support{
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.Google-Maps{
+.google-maps{
   margin-top: 7rem;
   margin-right: auto;
   margin-left: auto;
 }
 
-.Customer-Support-Feedback{
+.customer-support-feedback{
   margin-top: 2rem;
   margin-bottom: 6rem;
   margin-left: auto;
@@ -976,11 +981,11 @@ span {
 }
 
 
-.Customer-Support-Feedback h2{
+.customer-support-feedback h2{
   text-align: center;
 }
 
-.Customer-Support-Feedback input{
+.customer-support-feedback input{
   max-width: 40rem;
 }
 
@@ -1026,7 +1031,6 @@ textarea:focus-visible,textarea:focus-visible {
   margin-top: 6rem;
   background-color: var(--bg);
 }
-
 
 .product-image img{
   width: auto;
@@ -1085,13 +1089,59 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .product-review{
-  border: 1px solid var(--neutral-300);
+  border: 1px solid var(--blue-900);
+  width: 90%;
+  height: 70%;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.product-review-section{
+  margin-bottom: 5rem;
+}
+
+.overall-review h2{
+  font-size: 4.5rem;
+  color: var(--neutral-900);
+  margin-left: 3rem;
+  margin-right: auto;
+  margin-bottom: 0rem;
+  margin-top: 2rem;
+}
+
+.overall-review h3{
+  color: var(--neutral-900);
 }
 
 .related-items h3{
-  font-size: 1.5rem;
-  color: var(--neutral900);
+  color: var(--neutral-900);
 }
+
+.overall-review img{
+  max-width: 13rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0rem;
+}
+
+.product-review h5{
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: start;
+}
+
+.product-review img{
+  margin-left: 2rem;
+  max-width: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-review p{
+  margin-left: 2rem;
+  font-size: 1rem;
+  width: 70%;
+}
+
 
 /* ABOUT PAGE  ----------------------
 */
