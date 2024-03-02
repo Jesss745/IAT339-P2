@@ -185,6 +185,11 @@ p {
   margin-bottom: 0rem;
 }
 
+.table-heading {
+  font-family: "GT Super Ds Trial", serif;
+  margin-top: 0rem;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -287,7 +292,6 @@ input {
   border: 1px solid var(--neutral-300);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;
-  max-width:20rem;
   width:100%;
   display: block;
   border-radius: 0.25rem;
@@ -797,6 +801,7 @@ span {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5rem;
 }
 
 .footer-logo {
@@ -825,6 +830,7 @@ span {
   margin-top: 0rem;
   margin-bottom: 1rem;
   font-family: 'GT Super Ds Trial', sans-serif;
+  font-weight: bold;
 }
 
 .footer-link {
@@ -835,6 +841,20 @@ span {
 
 .footer-link:hover, .footer-link:focus {
   color: var(--pink-600);
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-btn {
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
+.copyright {
+  margin-top: 2rem;
 }
 
 
