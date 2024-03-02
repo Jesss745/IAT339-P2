@@ -494,26 +494,23 @@ select:invalid,select option[value=""] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid 0.5px var(--neutral-00);
 }
 
 .product-container {
   display: flex;
   flex-direction: column;
-  border: solid 0.5px var(--neutral-00);
   padding: 1.5rem;
 }
 
 .product-button {
   width: 100%;
   box-sizing: border-box;
-  border: solid 0.5px var(--neutral-00);
-  border-top: none;
+  border: none;
 }
 
 .product-button:hover, .btn-secondary:focus {
   background-color: var(--neutral-700);
-  border: solid 0.5px var(--neutral-00);
-  border-top: none;
 }
 
 .product-name {
