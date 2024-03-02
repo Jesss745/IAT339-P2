@@ -527,6 +527,7 @@ select:invalid,select option[value=""] {
   font-weight: 400;
   margin-top: 0rem;
   margin-bottom: 0rem;
+  text-align: left;
 }
 
 .product-price {
