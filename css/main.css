@@ -185,6 +185,11 @@ p {
   margin-bottom: 0rem;
 }
 
+.table-heading {
+  font-family: "GT Super Ds Trial", serif;
+  margin-top: 0rem;
+}
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
@@ -273,7 +278,6 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  width: 20em;
   max-width: 100%;
 }
 
@@ -287,7 +291,6 @@ input {
   border: 1px solid var(--neutral-300);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;
-  max-width:20rem;
   width:100%;
   display: block;
   border-radius: 0.25rem;
@@ -494,26 +497,23 @@ select:invalid,select option[value=""] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid 0.5px var(--neutral-00);
 }
 
 .product-container {
   display: flex;
   flex-direction: column;
-  border: solid 0.5px var(--neutral-00);
   padding: 1.5rem;
 }
 
 .product-button {
   width: 100%;
   box-sizing: border-box;
-  border: solid 0.5px var(--neutral-00);
-  border-top: none;
+  border: none;
 }
 
 .product-button:hover, .btn-secondary:focus {
   background-color: var(--neutral-700);
-  border: solid 0.5px var(--neutral-00);
-  border-top: none;
 }
 
 .product-name {
@@ -527,6 +527,7 @@ select:invalid,select option[value=""] {
   font-weight: 400;
   margin-top: 0rem;
   margin-bottom: 0rem;
+  text-align: left;
 }
 
 .product-price {
@@ -632,6 +633,7 @@ th:last-child {
   justify-content: start;
   margin-right: 2rem;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .cart-product-name {
@@ -799,6 +801,7 @@ span {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 5rem;
 }
 
 .footer-logo {
@@ -827,6 +830,7 @@ span {
   margin-top: 0rem;
   margin-bottom: 1rem;
   font-family: 'GT Super Ds Trial', sans-serif;
+  font-weight: bold;
 }
 
 .footer-link {
@@ -837,6 +841,21 @@ span {
 
 .footer-link:hover, .footer-link:focus {
   color: var(--pink-600);
+}
+
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.footer-btn {
+  width: fit-content;
+  font-size: 0.75rem;
+}
+
+.copyright {
+  margin-top: 2rem;
 }
 
 
@@ -857,6 +876,8 @@ span {
   display: flex;
   justify-content: space-between;
   justify-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .order-summary {
