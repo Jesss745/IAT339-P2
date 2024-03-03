@@ -633,6 +633,7 @@ th:last-child {
   justify-content: start;
   margin-right: 2rem;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .cart-product-name {
@@ -875,6 +876,8 @@ span {
   display: flex;
   justify-content: space-between;
   justify-items: start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .order-summary {
