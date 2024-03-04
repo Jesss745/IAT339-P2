@@ -1270,6 +1270,12 @@ textarea:focus-visible,textarea:focus-visible {
 
 .join-us-reasoning{
   max-width: 15rem;
+  text-align: center;
+  align-items: center;
+}
+
+.join-us-reasoning img{
+  max-width: 15rem;
 }
 
 .past-events{
