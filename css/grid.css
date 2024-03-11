@@ -135,10 +135,6 @@ display: grid;
     grid-template-columns: 1fr;
   }
 
-  .product-information{
-    grid-template-columns: 1fr;
-  }
-
   .product-reccomendations{
     grid-template-columns: 1fr;
   }
@@ -160,6 +156,10 @@ display: grid;
   }
 
   .product-review-section{
+    grid-template-columns: 1fr;
+  }
+
+  .product-information{
     grid-template-columns: 1fr;
   }
 }
@@ -211,10 +211,16 @@ display: grid;
   .product-information{
     grid-template-columns: 1fr 1fr;
   }
+
   .element-tertiary {
     margin-bottom: 0rem;
     margin-top: 7rem;
   }
+
+  .product-information{
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media (min-width: 40rem) {
@@ -242,6 +248,11 @@ display: grid;
     row-gap: 1rem;
     padding: 2rem 0rem;
   }
+
+  .product-information{
+    grid-template-columns: 1fr 1fr;
+  }
+
 
   .item-add{
     grid-template-columns: 1fr 3fr;
@@ -280,6 +291,11 @@ display: grid;
   .checkout-header {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .product-information{
+    grid-template-columns: 1fr 2fr;
+  }
+
 
   .checkout-total {
     grid-template-columns: 2fr 1fr;
@@ -355,6 +371,10 @@ display: grid;
     position: sticky;
     margin-bottom: 4rem;
     padding-top: 6rem;
+  }
+
+  .product-information{
+    grid-template-columns: 1fr 3fr;
   }
 
   .product-reccomendations{
