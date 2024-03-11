@@ -1075,7 +1075,7 @@ textarea:focus-visible,textarea:focus-visible {
 
 .product-details{
   width: auto;
-  margin-top: 6rem;
+  margin-top: 1rem;
 }
 
 .product-details h5{
@@ -1091,8 +1091,10 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .product-details p{
+  max-width: 25rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
+  font-size: 2.5vw;
 }
 
 .item-add{
@@ -1119,6 +1121,7 @@ textarea:focus-visible,textarea:focus-visible {
   padding: 0.25rem;
   border: 2px solid var(--neutral-00);
   max-width: 14rem;
+  margin-left: 5rem;
 }
 
 .product-reccs img{
@@ -1142,8 +1145,8 @@ textarea:focus-visible,textarea:focus-visible {
 .product-review{
   border: 1px solid var(--blue-900);
   width: 90%;
-  height: 70%;
-  margin-top: 5rem;
+  height: 80%;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -1190,7 +1193,7 @@ textarea:focus-visible,textarea:focus-visible {
 .product-review p{
   margin-left: 2rem;
   font-size: 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -1551,9 +1554,21 @@ figure {
     font-size: 2.5vw;
   }
 
+  .product-image img{
+    max-width: 25rem;
+  }
+
+  .item-add{
+    max-width: 25rem;
+  }
 }
 
 @media (min-width: 48rem) {
+  .product-details{
+    width: auto;
+    margin-top: 5rem;
+  }
+
   .event-content {
     margin: 0 0 2rem 0;
     max-width: 32rem;
@@ -1567,7 +1582,7 @@ figure {
   }
 
   .about-nebula{
-    margin-top: 5rem;
+    margin-top: rem;
   }
 
   .about-content-text h2{
@@ -1577,6 +1592,29 @@ figure {
   .about-content-text p{
     max-width: 20rem;
     font-size: 1.3vw;
+  }
+
+  .product-details p{
+    max-width: 35rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.2vw;
+  }
+
+  .product-image img{
+    max-width: 50rem;
+  }
+
+  .product-reccs{
+    background-color: var(--bg);
+    margin: 0rem;
+    padding: 0.25rem;
+    border: 2px solid var(--neutral-00);
+    max-width: 14rem;
+  }
+
+  .item-add{
+    max-width: 50rem;
   }
 }
 
