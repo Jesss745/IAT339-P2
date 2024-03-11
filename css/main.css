@@ -517,17 +517,22 @@ select:invalid,select option[value=""] {
 }
 
 .product-name {
+  font-family: "GT Super Ds Trial", serif;
   margin-top: 0.5rem;
   margin-bottom: 0.6rem;
-  color: var(--neutral-900)
+  color: var(--neutral-900);
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .product-color {
+  font-family: "GT Super Ds Trial", serif;
   font-size: 1rem;
   font-weight: 400;
   margin-top: 0rem;
   margin-bottom: 0rem;
   text-align: left;
+  color: var(--neutral-700);
 }
 
 .product-price {
@@ -903,6 +908,11 @@ span {
   padding: 1rem 0rem;
 }
 
+.main-title {
+  color: var(--bg-1000);
+  font-size: 2.0rem;
+}
+
 .img-checkout {
   max-width: 4rem;
   height: auto;
@@ -934,6 +944,11 @@ span {
 
 .check-label {
   font-size: 0.75rem;
+}
+
+.element-secondary {
+  border-left: var(--bg) solid 1px;
+  margin: 0rem;
 }
 
 /* 
