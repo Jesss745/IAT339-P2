@@ -1239,6 +1239,7 @@ textarea:focus-visible,textarea:focus-visible {
 
 .about-images-product {
   margin: 0rem;
+  display: block;
 }
 
 .about-images img{
@@ -1249,6 +1250,10 @@ textarea:focus-visible,textarea:focus-visible {
 .about-images-product img{
   width: auto;
   max-width: 35rem;
+}
+
+.about-images-product {
+  display: block;
 }
 
 /* EVENTS PAGE  ----------------------
