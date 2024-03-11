@@ -281,7 +281,6 @@ input {
   border: 1px solid var(--neutral-300);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;
-  width:100%;
   display: block;
   border-radius: 0.25rem;
   font-size: 0.75rem;
@@ -319,10 +318,17 @@ input:focus-visible,textarea:focus-visible {
   grid-template-columns: 1fr 1fr;
 }
 
+.input-container > input, 
+.input-two-column > input,
+.input-three-column > input {
+  width: 100%;
+}
+
 .input-three-column {
   display: grid; 
   gap: 1.55rem;
   grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
 .radio-container {
@@ -785,7 +791,6 @@ span {
 
 .footer-container {
   background-color: var(--bg);
-  padding: 6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -843,6 +848,10 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
+}
+
+.footer-newsletter input {
+  max-width:20rem;
 }
 
 .footer-btn {
