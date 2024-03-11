@@ -1214,21 +1214,6 @@ textarea:focus-visible,textarea:focus-visible {
   align-items: center;
 }
 
-.about-content-text{
-  margin-left: 10rem;
-  margin-right: 3rem;
-}
-
-.about-content-text h2{
-  font-size: 3rem;
-}
-
-.about-founder-quote{
-  margin-left: 3rem;
-  margin-right: 7rem;
-  text-align: center;
-}
-
 .about-founder-quote h3{
   color: var(--neutral-700);
 }
@@ -1247,7 +1232,7 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .about-images {
-  margin: 5rem;
+  margin: 2rem auto;
 }
 
 .about-images-product {
@@ -1259,6 +1244,12 @@ textarea:focus-visible,textarea:focus-visible {
   width: auto;
   max-width: 25rem;
 }
+
+.founder-images img{
+  width: auto;
+  max-width: 50rem
+}
+
 
 .about-images-product img{
   width: auto;
@@ -1463,6 +1454,45 @@ figure {
 }
 
 @media (min-width: 0rem) {
+  .element-main {
+    padding: 0rem 3rem;
+  }
+
+  .greeting-img-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .customer-support-feedback h2{
+    font-size: 4vw;
+  }
+
+  .customer-support-feedback label{
+    font-size: 3vw;
+  }
+
+  .about-content-text{
+    margin-left: 7.5rem;
+    margin-right: auto;
+  }
+
+  .about-founder-quote{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .about-content-text-founder h3{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    font-size: 4vw;
+  }
+
   .event-img {
     align-items: end;
     max-width: 100%;
@@ -1483,14 +1513,14 @@ figure {
   }
 
   .event-title {
-    font-size: 3rem;
+    font-size: 6vw;
     max-width: 32rem;
     margin: 0 0 2rem 0;
     color: var(--bg);
   } 
 
   .event-container h4{
-    font-size: 1.1rem;
+    font-size: 4vw;
     margin: 6rem 0 0rem 0;
     color: var(--neutral-00);
   }
@@ -1498,13 +1528,84 @@ figure {
   .event-content {
     margin: 0 0 2rem 0;
     max-width: 32rem;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
+    font-size: 2.5vw;
+    line-height: 3vw;
     color: var(--neutral-00);
+  }
+
+  .list-of-events p{
+    font-size: 2.5vw;
+  }
+
+  .about-nebula{
+    margin-top: 8rem;
+  }
+
+  .about-content-text h2{
+    font-size: 4vw;
+  }
+
+  .about-content-text p{
+    margin: 0;
+    max-width: 15rem;
+    font-size: 2.5vw;
+  }
+
+}
+
+@media (min-width: 48rem) {
+  .event-content {
+    margin: 0 0 2rem 0;
+    max-width: 32rem;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    color: var(--neutral-00);
+  }
+
+  .list-of-events p{
+    font-size: 1.5vw;
+  }
+
+  .about-nebula{
+    margin-top: 5rem;
+  }
+
+  .about-content-text h2{
+    font-size: 3vw;
+  }
+
+  .about-content-text p{
+    max-width: 20rem;
+    font-size: 1.3vw;
   }
 }
 
 @media (min-width: 68rem) {
+
+  .about-content-text{
+    margin-left: 10rem;
+    margin-right: 3rem;
+  }
+
+  .about-content-text-founder{
+    margin-left: 5rem;
+    margin-right: 3rem;
+    text-align: center;
+  }
+
+  .about-content-text-founder h3{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25rem;
+    font-size: 2vw;
+  }
+
+  .about-founder-quote{
+    margin-left: 3rem;
+    margin-right: 7rem;
+    text-align: center;
+  }
+
   .event-img {
     align-items: end;
     width: 100vw;
@@ -1522,18 +1623,32 @@ figure {
     right:6rem;
     text-align: left;
   }
+
   .event-title {
     font-size: 3rem;
     max-width: 32rem;
     margin: 0 0 2rem 0;
     color: var(--bg);
   }  
+
   .event-content {
     margin: 0 0 2rem 0;
     max-width: 32rem;
     font-size: 1.1rem;
     line-height: 1.6rem;
     color: var(--neutral-00);
+  }
+
+  .list-of-events p{
+    font-size: 0.8rem;
+  }
+
+  .customer-support-feedback h2{
+    font-size: 3vw;
+  }
+
+  .customer-support-feedback label{
+    font-size: 1.5vw;
   }
 }
 
@@ -1561,6 +1676,7 @@ figure {
 }
 
 @media (min-width: 0rem) {
+
   .about-section {
     margin: 0;
     padding: 0;
@@ -1582,6 +1698,11 @@ figure {
     padding: 0;
     text-align: center;
   }
+
+  .founder-images img{
+    width: auto;
+    max-width: 30rem
+  }
 }
 
 @media (min-width: 60rem) {
@@ -1593,6 +1714,7 @@ figure {
     justify-content: flex-start; /* Align items to the left */
     align-items: flex-start; /* Align items to the top */
   }
+
   .about-img {
     margin: 0;
     padding: 0;
@@ -1602,10 +1724,17 @@ figure {
     object-fit: cover;
     display: block;
   }
+
   .about-container {
     margin: auto 0; /* Vertically center align when small */
     margin-right: 6rem;
     padding: 0;
     text-align: left;
   }
+
+  .founder-images img{
+    width: auto;
+    max-width: 45rem
+  }
+
 }
