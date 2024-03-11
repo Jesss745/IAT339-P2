@@ -946,9 +946,9 @@ span {
   font-size: 0.75rem;
 }
 
-.element-secondary {
+.order-container {
   border-left: var(--bg) solid 1px;
-  margin: 0rem;
+  margin-bottom: 0rem;
 }
 
 /* 

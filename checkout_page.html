@@ -42,14 +42,14 @@
                   <div class="input-container">
                     <label class=form-label for="name">Name</label>
                     <div class="input-two-column">
-                      <input type="text" id="name" name="firstName" placeholder="First Name" required>
-                      <input type="text" id="lastname" name="lastName" placeholder="Last Name" required>
+                      <input type="text" id="name" name="firstName" placeholder="First Name">
+                      <input type="text" id="lastname" name="lastName" placeholder="Last Name">
                     </div>
                   </div>
   
                   <div class="input-container">
                     <label class=form-label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
   
                     <div class="checkbox-group">
                       <input type="checkbox" id="virtual" name="virtual">
@@ -63,18 +63,18 @@
   
                   <div class="input-container">
                     <label class=form-label for="creditcard">Card Information</label>
-                    <input type="text" id="creditcard" name="cardnumber" placeholder="Card Number" required>
+                    <input type="text" id="creditcard" name="cardnumber" placeholder="Card Number">
                     <div class="input-two-column">
-                      <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY" maxlength="5" required>
-                      <input type="text" id="securitynumber" name="securitynumber" placeholder="CVC" maxlength="3" required>
+                      <input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YY" maxlength="5">
+                      <input type="text" id="securitynumber" name="securitynumber" placeholder="CVC" maxlength="3">
                     </div>
                   </div>
   
                   <div class="input-container">
                     <label class=form-label for="address">Delivery</label>
-                    <input type="text" id="street" name="street" placeholder="Street Name" required>
+                    <input type="text" id="street" name="street" placeholder="Street Name">
                     <div class="input-three-column">
-                        <input type="text" id="city" name="city" placeholder="City" required>
+                        <input type="text" id="city" name="city" placeholder="City">
                         <select name="provinceName" id="provinceName" placeholder="Province">
                         <option value=" "  selected disabled hidden>Province</option>
                         <option value="alberta">Alberta</option>
@@ -87,13 +87,13 @@
                         <option value="princeEdward">Prince Edward Island</option>
                         <option value="saskatchewan">Saskatchewan</option>
                         </select>
-                        <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+                        <input type="text" id="postal" name="postal" placeholder="Postal Code">
                     </div>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
                   </div>
   
                   <div class="btn-container">
-                    <input class="btn btn-secondary" type="submit">
+                    <input class="btn btn-secondary" type="submit" formaction="thank_you_page.html">
                     <input class="btn btn-default" type="reset">
                   </div>
                 </section>
@@ -101,7 +101,7 @@
               </form>
         </section>
 
-        <section class="element-secondary">
+        <section class="order-container element-secondary">
             <section class="element-main">
                 <div>
                     <h2 class="cart-title">Order Summary</h2>
