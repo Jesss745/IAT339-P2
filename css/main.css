@@ -80,9 +80,9 @@ section {
 }
 
 .title-banner {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin: 0rem;
   padding: 8rem 6rem;
+  width: 100vw;
   background-color: var(--bg);
   color: var(--neutral-50);
 }
@@ -91,18 +91,12 @@ section {
   background-color: var(--bg);
   padding: 3rem;
   padding-right: 10rem;
-  width: fit-content;
+  width: 100vw;
 }
 
 .toc-element {
   padding: 0rem 6rem;
   margin-top: 4rem;
-}
-
-.toc-element h3 {
-  color: var(--neutral-700);
-  font-size: 1.65rem;
-  margin-top: 0rem;
 }
 
 /* 
@@ -114,10 +108,6 @@ section {
   border-top-width: 0.075rem;
   border-top-style: solid;
   border-top-color: var(--bg);
-}
-
-.element-main {
-  padding: 0rem 6rem;
 }
 
 .element-grid {
@@ -291,7 +281,6 @@ input {
   border: 1px solid var(--neutral-300);
   transition: border-color 0.5s;
   margin-bottom: 0.5rem;
-  width:100%;
   display: block;
   border-radius: 0.25rem;
   font-size: 0.75rem;
@@ -329,10 +318,17 @@ input:focus-visible,textarea:focus-visible {
   grid-template-columns: 1fr 1fr;
 }
 
+.input-container > input, 
+.input-two-column > input,
+.input-three-column > input {
+  width: 100%;
+}
+
 .input-three-column {
   display: grid; 
   gap: 1.55rem;
   grid-template-columns: 1fr 1fr 1fr;
+  
 }
 
 .radio-container {
@@ -639,6 +635,7 @@ th:last-child {
   margin-right: 2rem;
   gap: 2rem;
   flex-wrap: wrap;
+  border: 0px;
 }
 
 .cart-product-name {
@@ -794,7 +791,6 @@ span {
 
 .footer-container {
   background-color: var(--bg);
-  padding: 6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -854,6 +850,10 @@ span {
   width: auto;
 }
 
+.footer-newsletter input {
+  max-width:20rem;
+}
+
 .footer-btn {
   width: fit-content;
   font-size: 0.75rem;
@@ -883,14 +883,7 @@ span {
   justify-items: start;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-.order-summary {
-  position: sticky;
-  border-left: 0.5px solid var(--neutral-300);
-  padding-bottom: 6rem;
-  margin-bottom: 0rem;
-  padding-top: 6rem;
+  border: none;
 }
 
 .order-list {
@@ -898,6 +891,7 @@ span {
   flex-direction: column;
   gap: 2rem;
   padding-top: 2rem;
+  border: none;
 }
 
 .cart-title {
@@ -946,7 +940,7 @@ span {
   font-size: 0.75rem;
 }
 
-.order-container {
+.order-summary-container {
   border-left: var(--bg) solid 1px;
   margin-bottom: 0rem;
 }
@@ -1609,3 +1603,8 @@ figure {
     text-align: left;
   }
 }
+
+/* 
+  CONTACT PAGE ELEMENTS -------------------
+*/
+
