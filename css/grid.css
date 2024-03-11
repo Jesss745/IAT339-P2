@@ -74,6 +74,10 @@ display: grid;
     grid-template-columns: 1fr;
   }
 
+  .element-main {
+    margin: 0rem 2rem;
+  }
+
   .product-listing {
     grid-template-columns: 1fr;
   }
@@ -115,6 +119,14 @@ display: grid;
     margin-bottom: 0rem;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .order-summary {
+    position: sticky;
+    border-left: none;
+    padding-bottom: 6rem;
+    margin-bottom: 0rem;
+    padding-top: 6rem;
   }
 
   .payment-method{
@@ -218,6 +230,10 @@ display: grid;
 }
 
 @media (min-width: 40rem) {
+  .element-main {
+    padding: 0rem 6rem;
+  }
+
   .checkout-cart {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -349,6 +365,14 @@ display: grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0rem;
+  }
+
+  .order-summary {
+    position: sticky;
+    border-left: 0.5px solid var(--neutral-300);
+    padding-bottom: 6rem;
+    margin-bottom: 0rem;
+    padding-top: 6rem;
   }
 
   .payment-method {
