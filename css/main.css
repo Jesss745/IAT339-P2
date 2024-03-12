@@ -1058,7 +1058,6 @@ textarea:focus-visible,textarea:focus-visible {
 
 @media (min-width: 30rem) { 
   .customer-support{
-    margin-top: 2rem;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1304,7 +1303,7 @@ textarea:focus-visible,textarea:focus-visible {
   background-color: var(--bg);
   width:100%;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .founder-quote{
@@ -1404,7 +1403,6 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 @media (min-width: 80rem) {
-
   .about-content-text{
     margin-left: 10rem;
   }
@@ -1496,7 +1494,6 @@ textarea:focus-visible,textarea:focus-visible {
   font-size: 4vw;
   line-height: 1.5rem;
   color: var(--neutral-00);
-  margin-top: 0.5rem;
 }
 
 .list-of-events p{
@@ -1531,7 +1528,7 @@ textarea:focus-visible,textarea:focus-visible {
   .event-title-surrey {
     font-size: 4vw;
     max-width: 32rem;
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0 2rem 0;
     color: var(--neutral-00);
   } 
 
