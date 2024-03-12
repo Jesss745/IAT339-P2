@@ -1327,7 +1327,7 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .join-us-text{
-  margin: 7rem 0 5rem 0;
+  margin: 3rem 0 3rem 0;
   text-align: center;
 }
 
@@ -1338,7 +1338,7 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .join-us-reasoning img{
-  max-width: 15rem;
+  max-width: 10rem;
 }
 
 .past-events{
@@ -1357,25 +1357,109 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .list-of-events img{
+  max-width: 15rem;
+}
+
+.join-us-reasoning p{
   max-width: 19rem;
+  font-size: 4vw;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+
+}
+
+.event-title-surrey {
+  font-size: 8vw;
+  max-width: 32rem;
+  color: var(--neutral-00);
+} 
+
+.event-date-surrey {
+  font-size: 5vw;
+  color: var(--neutral-00);
+} 
+
+.event-surrey{
+  margin: 0 0 2rem 0;
+  font-size: 4vw;
+  line-height: 1.5rem;
+  color: var(--neutral-00);
+  margin-top: 0.5rem;
 }
 
 .list-of-events p{
   max-width: 19rem;
-  font-size: 1rem;
+  font-size: 4vw;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
 
 .list-of-events h4{
-  font-size: 0.8rem;
+  font-size: 5vw;
   margin: 0.5rem 0;
 }
 
 .list-of-events h3{
-  font-size: 1.5rem;
+  font-size: 6vw;
   margin: 0.8rem 0;
 }
+
+@media (min-width: 68rem) { 
+  .join-us-reasoning p{
+    max-width: 19rem;
+    font-size: 1.2vw;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .join-us-text{
+    font-size: 3vw;
+  }
+
+  .event-title-surrey {
+    font-size: 4vw;
+    max-width: 32rem;
+    margin: 2rem 0 3rem 0;
+    color: var(--neutral-00);
+  } 
+
+  .event-date-surrey {
+    font-size: 3vw;
+    color: var(--neutral-00);
+  } 
+
+  .event-surrey{
+    font-size: 1.2vw;
+    line-height: 1.5rem;
+    color: var(--neutral-00);
+  }
+
+  .list-of-events{
+    max-width: 40rem;
+  }
+
+  .list-of-events img{
+    max-width: 30rem;
+  }
+
+  .list-of-events p{
+    max-width: 30rem;
+    font-size: 1.2vw;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .list-of-events h4{
+    font-size: 1.5vw;
+    margin: 0.5rem 0;
+  }
+
+  .list-of-events h3{
+    font-size: 2.5vw;
+    margin: 0.8rem 0;
+  }
+}
+
 
 
 /* LANDING PAGE  ----------------------
