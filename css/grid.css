@@ -192,10 +192,6 @@
     padding: 2rem 0rem;
   }
 
-  .item-add{
-    grid-template-columns: 1fr 3fr;
-  }
-
   .contact-page{
     grid-template-columns: 1fr 1fr;
   }
