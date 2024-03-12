@@ -1320,13 +1320,18 @@ textarea:focus-visible,textarea:focus-visible {
 .about-content-text{
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .about-content-text h2{
   font-size: 3rem;
 }
 
-.about-founder-quote{;
+.about-founder-quote{
+  display: flex;
+  flex-direction: column;
 }
 
 .about-founder-quote h3{
@@ -1352,12 +1357,6 @@ textarea:focus-visible,textarea:focus-visible {
   margin: 5rem;
 }
 
-.about-images-product {
-  margin-left: 0rem;
-  width: auto;
-  display: block;
-}
-
 .about-images img{
   width: auto;
   max-width: 15rem;
@@ -1366,8 +1365,17 @@ textarea:focus-visible,textarea:focus-visible {
 .about-images-product img{
   margin-left: auto;
   margin-right: auto;
-  max-width: 22rem;
+  max-width: 20rem;
 } 
+
+@media (min-width: 25rem) {
+  .about-images-product img{
+    width: auto;
+    max-width: 20rem;
+  } 
+
+}
+
 
 @media (min-width: 45rem) {
   .about-content-text p{
@@ -1379,22 +1387,20 @@ textarea:focus-visible,textarea:focus-visible {
     max-width: 30rem;
   }
 
-  .about-images-product img{
-    width: auto;
-    max-width: 30rem;
-  } 
-
   .founder-quote{
     align-items: center;
     margin-right: 3rem;
     margin-left: auto;
   }
 
+  .about-images-product img{
+    width: auto;
+    max-width: 25rem;
+  } 
+
   .about-founder-quote h3{
     color: var(--neutral-700);
     font-size: 2.5vw;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
 
@@ -1405,7 +1411,7 @@ textarea:focus-visible,textarea:focus-visible {
   } 
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 65rem) {
   .about-content-text{
     margin-left: 10rem;
   }
@@ -1416,12 +1422,12 @@ textarea:focus-visible,textarea:focus-visible {
 
   .about-images img{
     width: auto;
-    max-width: 45rem;
+    max-width: 40rem;
   }
 
   .about-images-product img{
     width: auto;
-    max-width: 45rem;
+    max-width: 50rem;
   } 
 
 }
@@ -1576,7 +1582,7 @@ textarea:focus-visible,textarea:focus-visible {
   }
 }
 
-@media (min-width: 50rem) { 
+@media (min-width: 55rem) { 
 
   .list-of-events{
     max-width: 80rem;
@@ -1691,7 +1697,7 @@ figure {
 
 @media (min-width: 0rem) {
   .banner-img {
-    align-items: right;
+    align-items: start;
     width: 100vw;
     height: 50rem;
     object-fit: cover;
@@ -1724,7 +1730,7 @@ figure {
 
 @media (min-width: 68rem) {
   .banner-img {
-    align-items: right;
+    align-items: start;
     width: 100vw;
     height: auto;
     padding: 0;
