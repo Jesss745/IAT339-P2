@@ -1191,12 +1191,13 @@ textarea:focus-visible,textarea:focus-visible {
   background-color: var(--bg);
   width:100%;
   align-items: center;
+  margin-top: 8rem;
 }
 
 .founder-quote{
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .about-inclusivity{
@@ -1205,27 +1206,26 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .about-content-text{
-  margin-left: 10rem;
-  margin-right: 3rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .about-content-text h2{
   font-size: 3rem;
 }
 
-.about-founder-quote{
-  margin-left: 3rem;
-  margin-right: 7rem;
-  text-align: center;
+.about-founder-quote{;
 }
 
 .about-founder-quote h3{
   color: var(--neutral-700);
+  font-size: 5vw;
 }
 
 .about-founder-quote h5{
   font-weight: 100;
   color: var(--bg-1000);
+  font-size: 3.5vw;
 } 
 
 .about-content-text p{
@@ -1241,20 +1241,78 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .about-images-product {
-  margin: 0rem;
+  margin-left: 0rem;
+  width: auto;
   display: block;
 }
 
 .about-images img{
   width: auto;
-  max-width: 100%
-}
-
+  max-width: 15rem;
+  }
 
 .about-images-product img{
-  width: auto;
-  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 22rem;
+} 
+
+@media (min-width: 45rem) {
+  .about-content-text p{
+    font-size: 2vw;
+  }
+
+  .about-images img{
+    width: auto;
+    max-width: 30rem;
+  }
+
+  .about-images-product img{
+    width: auto;
+    max-width: 35rem;
+  } 
+
+  .founder-quote{
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: auto;
+  }
+
+  .about-founder-quote h3{
+    color: var(--neutral-700);
+    font-size: 3vw;
+  }
+
+  .about-founder-quote h5{
+    font-weight: 100;
+    color: var(--bg-1000);
+    font-size: 2vw;
+  } 
 }
+
+
+@media (min-width: 80rem) {
+
+  .about-content-text{
+    margin-left: 10rem;
+  }
+
+  .about-content-text p{
+    font-size: 1.5vw;
+  }
+
+  .about-images img{
+    width: auto;
+    max-width: 45rem;
+  }
+
+  .about-images-product img{
+    width: auto;
+    max-width: 60rem;
+  } 
+
+}
+
 
 /* EVENTS PAGE  ----------------------
 */
@@ -1492,6 +1550,11 @@ figure {
     font-size: 1.1rem;
     line-height: 1.6rem;
     color: var(--neutral-00);
+  }
+
+  .about-images-product {
+    width: 100%;
+    max-width: 25rem;
   }
 }
 
