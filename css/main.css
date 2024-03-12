@@ -1230,12 +1230,7 @@ textarea:focus-visible,textarea:focus-visible {
 
 .about-images img{
   width: auto;
-  max-width: 25rem;
-}
-
-.founder-images img{
-  width: auto;
-  max-width: 50rem
+  max-width: 100%
 }
 
 
@@ -1708,6 +1703,7 @@ figure {
     justify-content: center;
     align-items: center;
   }
+
   .about-img {
     margin: 0;
     padding: 0;
@@ -1716,15 +1712,21 @@ figure {
     object-fit: cover;
     display: block;
   }
+
   .about-container {
     margin: 6rem;
     padding: 0;
     text-align: center;
   }
 
+  .about-img img{
+    width:auto;
+    max-width: 100%;
+  }
+
   .founder-images img{
     width: auto;
-    max-width: 30rem
+    max-width: 100%;
   }
 }
 
