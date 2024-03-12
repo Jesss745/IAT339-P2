@@ -1,8 +1,18 @@
-.grid {
-display: grid;
-}
-
-.product-listing {
+.grid,
+.product-listing,
+.checkout-cart,
+.cart-info-grid,
+.checkout-header,
+.checkout-total,
+.support-page,
+.product-information,
+.item-ad,
+.product-reccomendations,
+.product-review-section,
+.about-nebula,
+.founder-quote,
+.about-inclusivity,
+.contact-page  {
   display: grid;
 }
 
@@ -11,66 +21,25 @@ display: grid;
   grid-gap: 4rem;
 }
 
-.checkout-cart {
-  display: grid; 
-}
-
-.cart-info-grid {
-  display: grid;
-}
-
-.checkout-header {
-  display: grid;
-}
-
-.checkout-total {
-  display: grid;
-}
-
 .checkout-page{
   margin: 0rem;
   display: grid;
 }
 
-.support-page{
-  display: grid;
-}
-
-.product-information{
-  display: grid;
-}
-
-.item-add{
-  display: grid;
-}
-
-.product-reccomendations{
-  display: grid;
-}
-
-.product-review-section{
-  display: grid;
-}
-
-.about-nebula{
-  display: grid;
-}
-
-.founder-quote{
-  display: grid;
-}
-
-.about-inclusivity{
-  display: grid;
-}
-
-.contact-page{
-  display: grid;
-}
-
 
 @media (min-width: 0rem) {
-  .grid {
+  .grid,
+  .product-listing,
+  .imagery-listing,
+  .payment-form-grid,
+  .support-page,
+  .product-information,
+  .product-reccomendations,
+  .about-nebula,
+  .founder-quote,
+  .about-inclusivity,
+  .contact-page,
+  .product-review-section {
     grid-template-columns: 1fr;
   }
 
@@ -85,18 +54,6 @@ display: grid;
 
   input {
     width: calc(100%-2rem);
-  }
-
-  .product-listing {
-    grid-template-columns: 1fr;
-  }
-
-  .imagery-listing {
-    grid-template-columns: 1fr;
-  }
-
-  .payment-form-grid {
-    grid-template-columns: 1fr;
   }
 
   .checkout-cart {
@@ -151,46 +108,11 @@ display: grid;
     margin-bottom: 0rem;
     margin-top: 10rem;
   }
-
-  .support-page{
-    grid-template-columns: 1fr;
-  }
-
-  .product-information{
-    grid-template-columns: 1fr;
-  }
-
-  .product-reccomendations{
-    grid-template-columns: 1fr;
-  }
-
-  .about-nebula{
-    grid-template-columns: 1fr;
-  }
-
-  .founder-quote{
-   grid-template-columns: 1fr;
-  }
-
-  .about-inclusivity{
-    grid-template-columns: 1fr;
-  }
-
-  .contact-page{
-    grid-template-columns: 1fr;
-  }
-
-  .product-review-section{
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (min-width: 20rem) {
-  .product-listing {
-    grid-template-columns: 1fr;
-  }
-
-  .imagery-listing {
+  .product-listing,
+  .imagery-listing  {
     grid-template-columns: 1fr;
   }
 
@@ -218,20 +140,17 @@ display: grid;
     row-gap: 1rem;
     padding: 2rem 0rem;
   }
-
 }
 
 @media (min-width: 34rem) {
   .element-secondary {
     padding-top: 9rem;
   }
-   .product-reccomendations{
+
+  .product-reccomendations{
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .product-information{
-    grid-template-columns: 1fr 1fr;
-  }
   .element-tertiary {
     margin-bottom: 0rem;
     margin-top: 7rem;
@@ -244,14 +163,9 @@ display: grid;
     margin-right: 6rem;
   }
 
-  input {
-    width: calc(100%-6rem);
-  }
-
   .footer-container {
     padding: 6rem;
   }
-
 
   .checkout-cart {
     grid-template-columns: 1fr 1fr 1fr;
@@ -299,6 +213,7 @@ display: grid;
     margin-bottom: 0rem;
     margin-top: 4rem;
   }
+
 }
 
 @media (min-width: 47rem) {
@@ -343,7 +258,10 @@ display: grid;
     column-gap: 1rem;
   }
 
-  
+  .product-information{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .checkout-header {
     grid-template-columns: 2fr 1fr 1fr;
   }
@@ -358,18 +276,9 @@ display: grid;
     padding: 2rem 0rem;
   }
 
-  .about-nebula{
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .founder-quote{
-   grid-template-columns: 1fr 1fr;
-  }
-
-  .about-inclusivity{
-    grid-template-columns: 1fr 1fr;
-  }
-
+  .about-nebula,
+  .founder-quote,
+  .about-inclusivity,
   .contact-page{
     grid-template-columns: 1fr 1fr;
   }
@@ -474,5 +383,3 @@ display: grid;
     grid-template-columns: 2fr 1fr;
   }
 }
-
-
