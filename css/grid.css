@@ -53,7 +53,7 @@
   }
 
   input {
-    width: calc(100%-2rem);
+    width: calc(100% - 2rem);
   }
 
   .checkout-cart {
@@ -199,6 +199,11 @@
   .contact-page{
     grid-template-columns: 1fr 1fr;
   }
+
+  .founder-quote{
+    grid-template-columns: 1fr 1fr
+  }
+
 }
 
 @media (min-width: 45.5rem) {
@@ -277,10 +282,13 @@
   }
 
   .about-nebula,
-  .founder-quote,
   .about-inclusivity,
   .contact-page{
     grid-template-columns: 1fr 1fr;
+  }
+
+  .founder-quote{
+    grid-template-columns: 2fr 1fr
   }
 
   .product-review-section{
