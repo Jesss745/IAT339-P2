@@ -1455,7 +1455,7 @@ textarea:focus-visible,textarea:focus-visible {
 }
 
 .past-events{
- margin: 0 5rem 7rem 5rem;
+ margin: 0 4rem 7rem 4rem;
 }
 
 .all-past-events{
@@ -1516,12 +1516,101 @@ textarea:focus-visible,textarea:focus-visible {
   margin: 0.8rem 0;
 }
 
-@media (min-width: 68rem) { 
+@media (min-width: 28rem) { 
   .join-us-reasoning p{
     max-width: 19rem;
-    font-size: 1.2vw;
+    font-size: 2.3vw;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+  }
+
+  .join-us-text{
+    font-size: 3vw;
+  }
+
+  .event-title-surrey {
+    font-size: 4vw;
+    max-width: 32rem;
+    margin: 1rem 0 2rem 0;
+    color: var(--neutral-00);
+  } 
+
+  .event-date-surrey {
+    font-size: 3vw;
+    color: var(--neutral-00);
+  } 
+
+  .event-surrey{
+    font-size: 2.3vw;
+    line-height: 1.5rem;
+    color: var(--neutral-00);
+  }
+
+  .past-events{
+    align-items: center;
+  }
+
+  .list-of-events{
+    max-width: 60rem;
+  }
+
+  .list-of-events img{
+    max-width: 40rem;
+  }
+
+  .list-of-events p{
+    max-width: 30rem;
+    font-size:3vw;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .list-of-events h4{
+    font-size: 2.8vw;
+    margin: 0.5rem 0;
+  }
+
+  .list-of-events h3{
+    font-size: 3.5vw;
+    margin: 0.8rem 0;
+  }
+}
+
+@media (min-width: 50rem) { 
+
+  .list-of-events{
+    max-width: 80rem;
+  }
+
+  .list-of-events img{
+    max-width: 40rem;
+  }
+
+
+  .list-of-events p{
+    max-width: 30rem;
+    font-size:2.5vw;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .list-of-events h4{
+    font-size: 3vw;
+    margin: 0.5rem 0;
+  }
+
+  .list-of-events h3{
+    font-size: 4vw;
+    margin: 0.8rem 0;
+  }
+}
+
+
+@media (min-width: 88rem) { 
+  .join-us-reasoning p{
+    max-width: 20rem;
+    font-size: 1.2vw;
+    margin: 0.5rem 0;
   }
 
   .join-us-text{
@@ -1546,8 +1635,14 @@ textarea:focus-visible,textarea:focus-visible {
     color: var(--neutral-00);
   }
 
+  .past-events h2{
+    font-size: 3vw;
+    margin: 0 2rem 3rem 2rem;
+  }
+
   .list-of-events{
     max-width: 40rem;
+    margin: 0 2rem;
   }
 
   .list-of-events img{
@@ -1556,7 +1651,7 @@ textarea:focus-visible,textarea:focus-visible {
 
   .list-of-events p{
     max-width: 30rem;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
   }
