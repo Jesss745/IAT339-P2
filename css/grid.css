@@ -74,9 +74,17 @@ display: grid;
     grid-template-columns: 1fr;
   }
 
+  .footer-container {
+    padding: 2rem;
+  }
+
   .element-main {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  input {
+    width: calc(100%-2rem);
   }
 
   .product-listing {
@@ -235,6 +243,15 @@ display: grid;
     margin-left: 6rem;
     margin-right: 6rem;
   }
+
+  input {
+    width: calc(100%-6rem);
+  }
+
+  .footer-container {
+    padding: 6rem;
+  }
+
 
   .checkout-cart {
     grid-template-columns: 1fr 1fr 1fr;

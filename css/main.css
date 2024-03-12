@@ -325,6 +325,12 @@ input:focus-visible,textarea:focus-visible {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.input-container > input,
+.input-two-column > input,
+.input-three-column > input {
+  width: 100%;
+}
+
 .radio-container {
   display: flex;
   flex-direction: column;
@@ -785,7 +791,6 @@ span {
 
 .footer-container {
   background-color: var(--bg);
-  padding: 6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
