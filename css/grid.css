@@ -140,6 +140,10 @@
     row-gap: 1rem;
     padding: 2rem 0rem;
   }
+
+  .founder-quote{
+    grid-template-columns: 2fr
+  }
 }
 
 @media (min-width: 34rem) {
